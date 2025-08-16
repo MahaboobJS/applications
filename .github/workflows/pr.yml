@@ -1,9 +1,13 @@
 name: Validate Pull Requests
 
 on:
-  pull_request:
+  push:
     branches:
-      - main # only run when created against the main branch
+      - main
+# on:
+#   pull_request:
+#     branches:
+#       - main # only run when created against the main branch
 
 # only run one version of this action per pull-request
 # https://docs.github.com/en/actions/using-jobs/using-concurrency
