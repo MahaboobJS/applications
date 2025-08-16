@@ -1,4 +1,4 @@
-# WizBI - Business Intelligence Platform
+# reBIZ - Business Intelligence Platform
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 
@@ -6,7 +6,7 @@
 
 ## 🚀 Project Overview
 
-WizBI is a modern business intelligence platform built with cutting-edge technologies, designed to provide powerful analytics and data visualization capabilities for modern businesses.
+reBIZ is a modern business intelligence platform built with cutting-edge technologies, designed to provide powerful analytics and data visualization capabilities for modern businesses.
 
 ### 🏗️ Architecture
 
@@ -44,13 +44,13 @@ WizBI is a modern business intelligence platform built with cutting-edge technol
 
 ```
 ├── apps/
-│   ├── wizBI/                    # Main WizBI application
+│   ├── reBIZ/                    # Main reBIZ application
 │   │   ├── src/
 │   │   │   ├── app/              # Next.js app directory
 │   │   │   ├── components/       # Shared components
 │   │   │   └── ...
 │   │   └── project.json
-│   └── wizBI-e2e/               # E2E tests
+│   └── reBIZ-e2e/               # E2E tests
 ├── libs/
 │   ├── shared/
 │   │   ├── providers/            # Shared providers
@@ -89,7 +89,7 @@ WizBI is a modern business intelligence platform built with cutting-edge technol
    ```bash
    npm run dev
    # or
-   npx nx serve wizBI
+   npx nx serve reBIZ
    ```
 
 4. **Open in browser**
@@ -248,6 +248,6 @@ For questions, issues, or contributions:
 
 ---
 
-**Built with ❤️ by the WizBI Team**
+**Built with ❤️ by the reBIZ Team**
 
 *Powered by Nx, Next.js, and modern web technologies*

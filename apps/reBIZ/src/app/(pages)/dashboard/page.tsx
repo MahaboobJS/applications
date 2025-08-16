@@ -3,7 +3,7 @@ export default function Dashboard() {
     <div style={{ padding: '20px' }}>
       <h1 style={{ color: '#333', marginBottom: '20px' }}>Dashboard</h1>
       <p style={{ color: '#666', marginBottom: '30px' }}>
-        Welcome to your WizBI dashboard. Here you can view your key metrics and insights.
+        Welcome to your reBIZ dashboard. Here you can view your key metrics and insights.
       </p>
       
       <div style={{ 

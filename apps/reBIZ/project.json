@@ -1,9 +1,9 @@
 {
-  "name": "wizBI",
+  "name": "reBIZ",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/wizBI/src",
+  "sourceRoot": "apps/reBIZ/src",
   "tags": [],
   "targets": {
     "build": {
@@ -11,11 +11,11 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/apps/wizBI"
+        "outputPath": "dist/apps/reBIZ"
       },
       "configurations": {
         "development": {
-          "outputPath": "apps/wizBI"
+          "outputPath": "apps/reBIZ"
         },
         "production": {}
       }
@@ -24,16 +24,16 @@
       "executor": "@nx/next:server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "wizBI:build",
+        "buildTarget": "reBIZ:build",
         "dev": true
       },
       "configurations": {
         "development": {
-          "buildTarget": "wizBI:build:development",
+          "buildTarget": "reBIZ:build:development",
           "dev": true
         },
         "production": {
-          "buildTarget": "wizBI:build:production",
+          "buildTarget": "reBIZ:build:production",
           "dev": false
         }
       }
@@ -41,14 +41,14 @@
     "export": {
       "executor": "@nx/next:export",
       "options": {
-        "buildTarget": "wizBI:build:production"
+        "buildTarget": "reBIZ:build:production"
       }
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/wizBI/jest.config.ts",
+        "jestConfig": "apps/reBIZ/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -62,7 +62,7 @@
       "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/wizBI/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/reBIZ/**/*.{ts,tsx,js,jsx}"]
       }
     }
   }

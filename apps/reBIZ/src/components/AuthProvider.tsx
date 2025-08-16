@@ -38,7 +38,7 @@ const Loading = ({ fullScreen }: { fullScreen?: boolean }) => (
     />
   </div>
 );
-// import { getRoutes } from '@ruyyaan-solutions/wizbi/util-access';
+// import { getRoutes } from '@ruyyaan-solutions/reBIZ/util-access';
 
 const API_BASE = '/api/v1';
 const AUTH_BASE = '/api/v1/auth';

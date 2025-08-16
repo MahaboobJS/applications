@@ -5,7 +5,7 @@
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "rules": {
-        "@next/next/no-html-link-for-pages": ["error", "apps/wizBI/src/app"]
+        "@next/next/no-html-link-for-pages": ["error", "apps/reBIZ/src/app"]
       }
     }
   ]

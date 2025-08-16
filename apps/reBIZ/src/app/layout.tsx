@@ -3,7 +3,7 @@ import './global.css';
 import { MainApp } from './MainApp';
 
 export const metadata = {
-  title: 'WizBI - Business Intelligence Platform',
+  title: 'reBIZ - Business Intelligence Platform',
   description: 'Advanced business intelligence and analytics platform',
 };
 
