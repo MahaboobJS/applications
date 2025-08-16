@@ -1,0 +1,37 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "composite": false,
+    "declaration": false,
+    "declarationMap": false,
+    "emitDeclarationOnly": false
+  },
+  "files": [],
+  "include": [],
+  "references": [
+    {
+      "path": "./apps/wizBI"
+    },
+    {
+      "path": "./apps/wizBI-e2e"
+    },
+    {
+      "path": "./libs/shared/providers"
+    },
+    {
+      "path": "./libs/shared/ui-mui-theme"
+    },
+    {
+      "path": "./libs/shared-ui"
+    },
+    {
+      "path": "./libs/wiz-bi/feature-side-navigation"
+    },
+    {
+      "path": "./libs/wiz-bi/ui"
+    },
+    {
+      "path": "./libs/wiz-bi/ui-theme"
+    }
+  ]
+}

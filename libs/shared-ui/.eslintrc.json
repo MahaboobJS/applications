@@ -1,0 +1,10 @@
+{
+  "extends": ["../../eslint.config.mjs"],
+  "ignorePatterns": ["!**/*", "dist/**/*"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {}
+    }
+  ]
+}

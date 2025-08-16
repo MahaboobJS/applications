@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+.next/
+out/
+
+# Cache
+.nx/
+.cache/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+.cursor/
+
+# Git
+.git/
+
+# Coverage
+coverage/
+
+# Lock files
+package-lock.json
+yarn.lock
+
+# Generated files
+*.d.ts
+!src/**/*.d.ts

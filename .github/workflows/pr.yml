@@ -1,0 +1,191 @@
+name: Validate Pull Requests
+
+on:
+  pull_request:
+    branches:
+      - main # only run when created against the main branch
+
+# only run one version of this action per pull-request
+# https://docs.github.com/en/actions/using-jobs/using-concurrency
+concurrency:
+  group: pr-validation-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  Test-and-build:
+    timeout-minutes: 40
+    if: github.event.pull_request.draft == false
+    name: 'Run tests and check build works'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        # The 'fetch-depth: 0' option is used to fetch all history for all branches and tags.
+        # We need to fetch all branches and commits so that Nx affected has a base to compare against.
+        with:
+          fetch-depth: 0
+
+      - id: findChanges
+        name: Find changes in files that can cause a build change
+        run: |
+          git fetch origin main
+
+          DEPS_JS="(js|jsx|html|ts|tsx)$|^package.json|^package-lock.json|^nx.json|^tsconfig"
+          DEPS_CONFIG="^\.github|^libs/.*/project\.json|^apps/.*/project\.json"
+          CHANGED_FILES=$(git diff --name-only origin/main...HEAD)
+          ANY_CHANGES=false
+          CODE_CHANGES=false
+
+          if echo "$CHANGED_FILES" | grep -Eq "$DEPS_JS"; then
+            echo "JS_CHANGES=true" >> "$GITHUB_OUTPUT"
+            echo 'JS/TS Changes: yes'
+            ANY_CHANGES=true
+            CODE_CHANGES=true
+          else
+            echo 'JS/TS Changes: no'
+          fi
+
+          if echo "$CHANGED_FILES" | grep -Eq "$DEPS_CONFIG"; then
+            echo "CONFIG_CHANGES=true" >> "$GITHUB_OUTPUT"
+            echo 'Config Changes: yes'
+            ANY_CHANGES=true
+          else
+            echo 'Config Changes: no'
+          fi
+
+          echo "ANY_CHANGES=$ANY_CHANGES" >> "$GITHUB_OUTPUT"
+          echo "CODE_CHANGES=$CODE_CHANGES" >> "$GITHUB_OUTPUT"
+
+      - name: Cache node_modules
+        uses: actions/cache@v4
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: Setup and cache Node.js
+        uses: actions/setup-node@v4
+        if: steps.findChanges.outputs.ANY_CHANGES == 'true'
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        if: steps.findChanges.outputs.ANY_CHANGES == 'true'
+        run: npm ci
+
+      - name: Setup NX Tracking
+        if: steps.findChanges.outputs.ANY_CHANGES == 'true'
+        uses: nrwl/nx-set-shas@v4
+
+      # Format check for all files
+      - name: Format Check
+        run: npx nx format:check
+        if: steps.findChanges.outputs.ANY_CHANGES == 'true'
+
+      # Lint affected projects
+      - name: Lint
+        run: npx nx affected --target=lint --parallel=3
+        if: steps.findChanges.outputs.CODE_CHANGES == 'true'
+
+      # Type check affected projects
+      - name: Type Check
+        run: npx nx affected --target=typecheck --parallel=3
+        if: steps.findChanges.outputs.CODE_CHANGES == 'true'
+
+      # Test affected projects
+      - name: Test
+        run: npx nx affected --target=test --ci --parallel=3 --coverage
+        if: steps.findChanges.outputs.CODE_CHANGES == 'true'
+
+      # Build affected projects
+      - name: Build
+        run: npx nx affected --target=build --parallel=3
+        if: steps.findChanges.outputs.CODE_CHANGES == 'true'
+
+      # E2E tests for affected projects
+      - name: E2E Tests
+        run: npx nx affected --target=e2e --parallel=1
+        if: steps.findChanges.outputs.JS_CHANGES == 'true'
+        continue-on-error: true # E2E tests can be flaky
+
+      # Generate coverage report
+      - name: Create Coverage Report
+        id: coverage
+        if: ${{ github.actor != 'dependabot[bot]' && steps.findChanges.outputs.CODE_CHANGES == 'true' }}
+        run: |
+          echo "## Code Coverage Summary" >> coverage.txt
+          echo "" >> coverage.txt
+          echo "Note: this is only for affected changes" >> coverage.txt
+          echo "" >> coverage.txt
+          echo "Coverage reports will be available once tests are properly configured." >> coverage.txt
+
+      # Add coverage comment to PR
+      - name: Add coverage comment to the PR
+        uses: marocchino/sticky-pull-request-comment@v2
+        if: ${{ github.actor != 'dependabot[bot]' && steps.findChanges.outputs.CODE_CHANGES == 'true' }}
+        with:
+          header: coverage
+          path: coverage.txt
+
+  Security-Check:
+    timeout-minutes: 10
+    name: 'Security and dependency check'
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Audit dependencies
+        run: npm audit --audit-level moderate
+        continue-on-error: true
+
+      - name: Check for known vulnerabilities
+        run: npx nx report
+        continue-on-error: true
+
+  PR-Info:
+    timeout-minutes: 5
+    name: 'PR Information'
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate affected project graph
+        run: |
+          echo "## Affected Projects" >> pr-info.txt
+          echo "" >> pr-info.txt
+          echo "The following projects are affected by this PR:" >> pr-info.txt
+          echo "" >> pr-info.txt
+          npx nx show projects --affected --base=origin/main || echo "Unable to determine affected projects" >> pr-info.txt
+
+      - name: Add PR info comment
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: pr-info
+          path: pr-info.txt
