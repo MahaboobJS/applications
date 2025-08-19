@@ -3,7 +3,7 @@ import './global.css';
 import { MainApp } from './MainApp';
 
 export const metadata = {
-  title: 'reBIZ - Business Intelligence Platform',
+  title: 'reBiz - Business Intelligence Platform',
   description: 'Advanced business intelligence and analytics platform',
 };
 

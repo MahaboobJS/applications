@@ -1,6 +1,6 @@
-# Contributing to reBIZ
+# Contributing to reBiz
 
-Welcome to the reBIZ project! This guide will help you get started with contributing to our codebase.
+Welcome to the reBiz project! This guide will help you get started with contributing to our codebase.
 
 ## 🎯 Getting Started
 
@@ -380,4 +380,4 @@ Any other context, mockups, or examples.
 
 ---
 
-Thank you for contributing to reBIZ! Every contribution, no matter how small, makes a difference. 🎉
+Thank you for contributing to reBiz! Every contribution, no matter how small, makes a difference. 🎉

@@ -3,7 +3,7 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/reBIZ/src",
+  "sourceRoot": "apps/reBiz/src",
   "tags": [],
   "targets": {
     "build": {
@@ -11,11 +11,11 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/apps/reBIZ"
+        "outputPath": "dist/apps/reBiz"
       },
       "configurations": {
         "development": {
-          "outputPath": "apps/reBIZ"
+          "outputPath": "apps/reBiz"
         },
         "production": {}
       }
@@ -24,16 +24,16 @@
       "executor": "@nx/next:server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "reBIZ:build",
+        "buildTarget": "reBiz:build",
         "dev": true
       },
       "configurations": {
         "development": {
-          "buildTarget": "reBIZ:build:development",
+          "buildTarget": "reBiz:build:development",
           "dev": true
         },
         "production": {
-          "buildTarget": "reBIZ:build:production",
+          "buildTarget": "reBiz:build:production",
           "dev": false
         }
       }
@@ -41,14 +41,14 @@
     "export": {
       "executor": "@nx/next:export",
       "options": {
-        "buildTarget": "reBIZ:build:production"
+        "buildTarget": "reBiz:build:production"
       }
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/reBIZ/jest.config.ts",
+        "jestConfig": "apps/reBiz/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -62,7 +62,7 @@
       "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/reBIZ/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/reBiz/**/*.{ts,tsx,js,jsx}"]
       }
     }
   }

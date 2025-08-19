@@ -1,7 +1,7 @@
 export default function Index() {
   return (
     <div style={{ padding: '20px', textAlign: 'center' }}>
-      <h2 style={{ color: '#333', marginBottom: '16px' }}>reBIZ Dashboard</h2>
+      <h2 style={{ color: '#333', marginBottom: '16px' }}>reBiz Dashboard</h2>
       <p style={{ color: '#666', marginBottom: '20px' }}>
         Welcome to your business intelligence platform. Get started by exploring the features below.
       </p>

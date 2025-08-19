@@ -5,21 +5,21 @@ import CredentialsProvider from 'next-auth/providers/credentials';
 const demoUsers = [
   {
     id: '1',
-    email: 'admin@reBIZ.com',
+    email: 'admin@reBiz.com',
     password: 'admin123',
     name: 'Admin User',
     role: 'admin',
   },
   {
     id: '2',
-    email: 'user@reBIZ.com',
+    email: 'user@reBiz.com',
     password: 'user123',
     name: 'Regular User',
     role: 'user',
   },
   {
     id: '3',
-    email: 'demo@reBIZ.com',
+    email: 'demo@reBiz.com',
     password: 'demo123',
     name: 'Demo User',
     role: 'demo',

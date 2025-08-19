@@ -21,9 +21,9 @@
     "paths": {
       "@ruyyaan/shared/providers": ["./libs/shared/providers/src/index.ts"],
       "@ruyyaan/shared/ui-mui-theme": ["./libs/shared/ui-mui-theme/src/index.ts"],
-      "@ruyyaan/reBIZ/ui-theme": ["./libs/wiz-bi/ui-theme/src/index.ts"],
-      "@ruyyaan/reBIZ/ui": ["./libs/wiz-bi/ui/src/index.ts"],
-      "@ruyyaan/reBIZ/feature-side-navigation": ["./libs/wiz-bi/feature-side-navigation/src/index.ts"]
+      "@ruyyaan/reBiz/ui-theme": ["./libs/wiz-bi/ui-theme/src/index.ts"],
+      "@ruyyaan/reBiz/ui": ["./libs/wiz-bi/ui/src/index.ts"],
+      "@ruyyaan/reBiz/feature-side-navigation": ["./libs/wiz-bi/feature-side-navigation/src/index.ts"]
     }
   }
 }

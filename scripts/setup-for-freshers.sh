@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# reBIZ Project Setup Script for Freshers
+# reBiz Project Setup Script for Freshers
 # This script helps new team members set up the project quickly
 
-echo "🚀 Welcome to reBIZ Project Setup!"
+echo "🚀 Welcome to reBiz Project Setup!"
 echo "This script will help you set up the project for development."
 echo "=================================="
 

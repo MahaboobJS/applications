@@ -30,8 +30,8 @@
     "**/*.jsx",
     "**/*.ts",
     "**/*.tsx",
-    "../../apps/reBIZ/.next/types/**/*.ts",
-    "../../dist/apps/reBIZ/.next/types/**/*.ts",
+    "../../apps/reBiz/.next/types/**/*.ts",
+    "../../dist/apps/reBiz/.next/types/**/*.ts",
     ".next/types/**/*.ts"
   ],
   "exclude": [

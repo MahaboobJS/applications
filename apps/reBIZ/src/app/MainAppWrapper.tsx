@@ -13,7 +13,7 @@ export function MainAppWrapper({ children }: React.PropsWithChildren) {
         fontFamily: 'Arial, sans-serif',
       }}
     >
-      <h1 style={{ color: '#333', marginBottom: '20px' }}>Welcome to reBIZ</h1>
+      <h1 style={{ color: '#333', marginBottom: '20px' }}>Welcome to reBiz</h1>
       <p style={{ color: '#666', textAlign: 'center', maxWidth: '500px' }}>
         Your business intelligence application is ready. The main features and navigation will be
         available soon.

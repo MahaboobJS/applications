@@ -46,7 +46,7 @@ const LoginPage = () => {
         <div className="login-header">
           <div className="logo">
             <div className="logo-icon">📊</div>
-            <h1>reBIZ</h1>
+            <h1>reBiz</h1>
           </div>
           <p>Sign in to your account</p>
         </div>
