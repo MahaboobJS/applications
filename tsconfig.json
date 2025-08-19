@@ -10,10 +10,10 @@
   "include": [],
   "references": [
     {
-      "path": "./apps/reBIZ"
+      "path": "./apps/reBiz"
     },
     {
-      "path": "./apps/reBIZ-e2e"
+      "path": "./apps/reBiz-e2e"
     },
     {
       "path": "./libs/shared/providers"

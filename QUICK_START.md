@@ -1,4 +1,4 @@
-# 🚀 Quick Start Guide for reBIZ
+# 🚀 Quick Start Guide for reBiz
 
 ## For Complete Beginners (Never coded before)
 
@@ -48,7 +48,7 @@
 
 2. **Open in browser**
    - Go to `http://localhost:3000`
-   - You should see the reBIZ application! 🎉
+   - You should see the reBiz application! 🎉
 
 3. **Open in VS Code**
    ```bash
@@ -84,7 +84,7 @@ npm run lint:fix    # Fix code style
 
 ```
 applications/
-├── apps/reBIZ/          # Main application
+├── apps/reBiz/          # Main application
 │   ├── src/app/         # Pages and routes
 │   ├── src/components/  # Reusable components
 │   └── public/          # Static files
