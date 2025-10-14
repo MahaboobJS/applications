@@ -1,0 +1,14 @@
+{
+  "name": "@ruyyaan-solutions/student-portal-ui",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "react": "~18.3.1",
+    "react-dom": "~18.3.1",
+    "react-router-dom": "^6.29.0",
+    "@mui/material": "^7.3.2",
+    "@mui/icons-material": "^7.3.2",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1"
+  }
+}

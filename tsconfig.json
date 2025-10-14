@@ -13,25 +13,13 @@
       "path": "./apps/reBiz"
     },
     {
-      "path": "./apps/reBiz-e2e"
+      "path": "./apps/reBIZ"
     },
     {
-      "path": "./libs/shared/providers"
+      "path": "./apps/student-portal-backend"
     },
     {
-      "path": "./libs/shared/ui-mui-theme"
-    },
-    {
-      "path": "./libs/shared-ui"
-    },
-    {
-      "path": "./libs/wiz-bi/feature-side-navigation"
-    },
-    {
-      "path": "./libs/wiz-bi/ui"
-    },
-    {
-      "path": "./libs/wiz-bi/ui-theme"
+      "path": "./apps/student-portal-ui"
     }
   ]
 }

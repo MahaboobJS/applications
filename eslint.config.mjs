@@ -1,7 +1,6 @@
 import { FlatCompat } from '@eslint/eslintrc';
 import js from '@eslint/js';
 import nxEslintPlugin from '@nx/eslint-plugin';
-
 const compat = new FlatCompat({
   baseDirectory: import.meta.dirname,
   recommendedConfig: js.configs.recommended,
@@ -39,4 +38,7 @@ export default [
     ...config,
     files: ['**/*.js', '**/*.jsx'],
   })),
+  {
+    ignores: ['**/vite.config.*.timestamp*', '**/vitest.config.*.timestamp*'],
+  },
 ];

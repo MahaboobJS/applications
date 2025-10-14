@@ -33,7 +33,6 @@
         }
       }
     },
-
     {
       "plugin": "@nx/jest/plugin",
       "options": {
@@ -70,11 +69,30 @@
         "buildDepsTargetName": "build-deps",
         "typecheckTargetName": "typecheck"
       }
+    },
+    {
+      "plugin": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "testTargetName": "test",
+        "serveTargetName": "serve",
+        "devTargetName": "dev",
+        "previewTargetName": "preview",
+        "serveStaticTargetName": "serve-static",
+        "typecheckTargetName": "typecheck",
+        "buildDepsTargetName": "build-deps",
+        "watchDepsTargetName": "watch-deps"
+      }
     }
   ],
   "targetDefaults": {
     "test": {
       "dependsOn": ["^build"]
+    },
+    "@nx/esbuild:esbuild": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
     }
   },
   "generators": {
@@ -86,7 +104,18 @@
     },
     "@nx/react": {
       "library": {
+        "style": "styled-jsx",
+        "linter": "none",
         "unitTestRunner": "none"
+      },
+      "application": {
+        "babel": true,
+        "style": "styled-jsx",
+        "linter": "none",
+        "bundler": "vite"
+      },
+      "component": {
+        "style": "styled-jsx"
       }
     }
   }
