@@ -14,6 +14,9 @@ export default [
     },
   },
   {
+    ignores: ['**/.next/**', '**/dist/**', '**/node_modules/**', '**/coverage/**'],
+  },
+  {
     files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
     rules: {
       '@nx/enforce-module-boundaries': [

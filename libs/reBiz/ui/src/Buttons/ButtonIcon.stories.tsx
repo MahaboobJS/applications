@@ -1,0 +1,28 @@
+import type { StoryObj, Meta } from '@storybook/react';
+
+import { IconsList } from '@ruyyaan/shared/ui-icons';
+
+import { ButtonIcon } from './ButtonIcon';
+
+const meta: Meta<typeof ButtonIcon> = {
+  component: ButtonIcon,
+  title: 'Work Permit / UI / Buttons / ButtonIcon',
+};
+
+export default meta;
+
+type Story = StoryObj<typeof ButtonIcon>;
+
+export const Primary: Story = {
+  args: {
+    link: 'text',
+    icon: IconsList.activity,
+  },
+};
+
+export const Print: Story = {
+  args: {
+    link: 'text',
+    icon: IconsList.print,
+  },
+};

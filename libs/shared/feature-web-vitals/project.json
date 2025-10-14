@@ -1,0 +1,8 @@
+{
+  "name": "shared-feature-web-vitals",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/feature-web-vitals/src",
+  "projectType": "library",
+  "tags": ["type:feature", "scope:shared"]
+}
+

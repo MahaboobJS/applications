@@ -2,17 +2,21 @@
 
 ## 🎯 Quick Start for Freshers
 
-This guide will help you understand how to work on the reBiz project as a beginner developer.
+This guide will help you understand how to work on the reBiz project as a
+beginner developer.
 
 ## 📚 Learning Path
 
 ### Week 1: Fundamentals
+
 1. **HTML/CSS Basics**
+
    - Learn basic HTML tags and CSS styling
    - Understand flexbox and grid layouts
    - Practice responsive design
 
 2. **JavaScript Fundamentals**
+
    - Variables, functions, arrays, objects
    - DOM manipulation
    - ES6+ features (arrow functions, destructuring, async/await)
@@ -23,7 +27,9 @@ This guide will help you understand how to work on the reBiz project as a beginn
    - Basic merge conflict resolution
 
 ### Week 2: React & TypeScript
+
 1. **React Concepts**
+
    - Components and JSX
    - Props and state
    - Event handling
@@ -35,7 +41,9 @@ This guide will help you understand how to work on the reBiz project as a beginn
    - Component props typing
 
 ### Week 3: Project-Specific Technologies
+
 1. **Next.js**
+
    - File-based routing
    - Pages and layouts
    - API routes
@@ -47,6 +55,7 @@ This guide will help you understand how to work on the reBiz project as a beginn
 ## 🛠️ Development Environment Setup
 
 ### Essential VS Code Extensions
+
 ```json
 {
   "recommendations": [
@@ -62,6 +71,7 @@ This guide will help you understand how to work on the reBiz project as a beginn
 ```
 
 ### VS Code Settings for Team Consistency
+
 ```json
 {
   "editor.formatOnSave": true,
@@ -76,12 +86,14 @@ This guide will help you understand how to work on the reBiz project as a beginn
 ## 📋 Code Standards
 
 ### File Naming Conventions
+
 - **Components**: `PascalCase.tsx` (e.g., `LoginForm.tsx`)
 - **Pages**: `page.tsx` (Next.js convention)
 - **Utilities**: `camelCase.ts` (e.g., `authUtils.ts`)
 - **Constants**: `UPPER_SNAKE_CASE.ts` (e.g., `API_ENDPOINTS.ts`)
 
 ### Component Structure
+
 ```typescript
 // Good component structure
 import React from 'react';
@@ -93,18 +105,15 @@ interface ComponentProps {
   isLoading?: boolean;
 }
 
-const MyComponent: React.FC<ComponentProps> = ({ 
-  title, 
-  onSubmit, 
-  isLoading = false 
+const MyComponent: React.FC<ComponentProps> = ({
+  title,
+  onSubmit,
+  isLoading = false,
 }) => {
   return (
     <Box>
       <h2>{title}</h2>
-      <Button 
-        onClick={onSubmit}
-        disabled={isLoading}
-      >
+      <Button onClick={onSubmit} disabled={isLoading}>
         {isLoading ? 'Loading...' : 'Submit'}
       </Button>
     </Box>
@@ -115,7 +124,9 @@ export default MyComponent;
 ```
 
 ### Git Commit Message Format
+
 We use conventional commits:
+
 ```
 type(scope): description
 
@@ -129,6 +140,7 @@ style(header): improve mobile responsiveness
 ## 🧪 Testing Guidelines
 
 ### Writing Tests
+
 ```typescript
 // Component test example
 import { render, screen, fireEvent } from '@testing-library/react';
@@ -143,7 +155,7 @@ describe('MyComponent', () => {
   it('calls onSubmit when button is clicked', () => {
     const mockSubmit = jest.fn();
     render(<MyComponent title="Test" onSubmit={mockSubmit} />);
-    
+
     fireEvent.click(screen.getByText('Submit'));
     expect(mockSubmit).toHaveBeenCalledTimes(1);
   });
@@ -153,6 +165,7 @@ describe('MyComponent', () => {
 ## 🔄 Daily Workflow
 
 ### Morning Routine
+
 ```bash
 # 1. Get latest changes
 git checkout main
@@ -169,6 +182,7 @@ npm run dev
 ```
 
 ### Development Process
+
 ```bash
 # Run these commands regularly while developing:
 
@@ -186,6 +200,7 @@ npm run format
 ```
 
 ### End of Day
+
 ```bash
 # 1. Stage your changes
 git add .
@@ -202,12 +217,14 @@ git push origin feature/your-feature-name
 ## 🎨 UI/UX Guidelines
 
 ### Design System
+
 - Use Material-UI components whenever possible
 - Follow the established color scheme
 - Maintain consistent spacing (8px grid system)
 - Ensure mobile responsiveness
 
 ### Accessibility
+
 - Always include `alt` text for images
 - Use semantic HTML tags
 - Ensure proper color contrast
@@ -216,12 +233,14 @@ git push origin feature/your-feature-name
 ## 🚀 Performance Best Practices
 
 ### Code Optimization
+
 - Use React.memo for expensive components
 - Implement proper loading states
 - Optimize images and assets
 - Use TypeScript for better code quality
 
 ### Bundle Optimization
+
 - Import only what you need from libraries
 - Use dynamic imports for large components
 - Optimize images with Next.js Image component
@@ -231,6 +250,7 @@ git push origin feature/your-feature-name
 ### Common Issues and Solutions
 
 #### Type Errors
+
 ```typescript
 // Problem: Property 'name' does not exist on type 'User'
 // Solution: Define proper interface
@@ -242,6 +262,7 @@ interface User {
 ```
 
 #### Component Not Rendering
+
 ```typescript
 // Problem: Component returns undefined
 // Solution: Always return JSX
@@ -251,6 +272,7 @@ const MyComponent = () => {
 ```
 
 #### State Not Updating
+
 ```typescript
 // Problem: State not updating immediately
 // Solution: Understand that setState is async
@@ -263,11 +285,12 @@ const handleClick = () => {
 
 // Better approach:
 const handleClick = () => {
-  setCount(prev => prev + 1);
+  setCount((prev) => prev + 1);
 };
 ```
 
 ### Browser Dev Tools
+
 - **Console**: Check for error messages
 - **Network**: Monitor API calls
 - **React DevTools**: Inspect component state and props
@@ -276,18 +299,21 @@ const handleClick = () => {
 ## 📖 Learning Resources
 
 ### Documentation
+
 - [React Docs](https://react.dev)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/)
 - [Next.js Docs](https://nextjs.org/docs)
 - [Material-UI Docs](https://mui.com)
 
 ### Practice Projects
+
 1. **Todo App**: Learn basic CRUD operations
 2. **Weather App**: Practice API integration
 3. **Calculator**: Understand state management
 4. **Blog**: Learn routing and forms
 
 ### YouTube Channels
+
 - Traversy Media
 - The Net Ninja
 - Academind
@@ -296,6 +322,7 @@ const handleClick = () => {
 ## 🤝 Team Collaboration
 
 ### Code Review Checklist
+
 - [ ] Code follows project conventions
 - [ ] No console.log statements in production code
 - [ ] Proper TypeScript types are used
@@ -303,6 +330,7 @@ const handleClick = () => {
 - [ ] Documentation is updated if needed
 
 ### Communication
+
 - Ask questions early and often
 - Share your screen when stuck
 - Document solutions for common problems
@@ -311,12 +339,13 @@ const handleClick = () => {
 ## 🎯 Goal Setting
 
 ### Monthly Goals for Freshers
-**Month 1**: Master React basics and component creation
-**Month 2**: Learn TypeScript and state management
-**Month 3**: Understand Next.js routing and API integration
-**Month 4**: Contribute to major features independently
+
+**Month 1**: Master React basics and component creation **Month 2**: Learn
+TypeScript and state management **Month 3**: Understand Next.js routing and API
+integration **Month 4**: Contribute to major features independently
 
 ### Weekly Check-ins
+
 - What did you learn this week?
 - What challenges did you face?
 - What do you want to focus on next week?
@@ -324,4 +353,5 @@ const handleClick = () => {
 
 ---
 
-Remember: **Everyone starts somewhere. Focus on consistent learning and don't be afraid to make mistakes!** 🚀
+Remember: **Everyone starts somewhere. Focus on consistent learning and don't be
+afraid to make mistakes!** 🚀

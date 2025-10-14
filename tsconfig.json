@@ -9,29 +9,19 @@
   "files": [],
   "include": [],
   "references": [
-    {
-      "path": "./apps/reBiz"
-    },
-    {
-      "path": "./apps/reBiz-e2e"
-    },
-    {
-      "path": "./libs/shared/providers"
-    },
-    {
-      "path": "./libs/shared/ui-mui-theme"
-    },
-    {
-      "path": "./libs/shared-ui"
-    },
-    {
-      "path": "./libs/wiz-bi/feature-side-navigation"
-    },
-    {
-      "path": "./libs/wiz-bi/ui"
-    },
-    {
-      "path": "./libs/wiz-bi/ui-theme"
-    }
+    { "path": "./apps/reBiz" },
+    { "path": "./libs/shared/ui" },
+    { "path": "./libs/shared/ui-icons" },
+    { "path": "./libs/shared/ui-assets" },
+    { "path": "./libs/shared/util-ui" },
+    { "path": "./libs/shared/util-errors" },
+    { "path": "./libs/shared/util-test" },
+    { "path": "./libs/reBiz/util-test" },
+    { "path": "./libs/reBiz/feature-side-navigation" },
+    { "path": "./libs/reBiz/ui" },
+    { "path": "./libs/reBiz/util-api" },
+    { "path": "./libs/reBiz/util-env" },
+    // { "path": "./libs/reBiz/util-access" },
+    { "path": "./libs/reBiz/data-access-api" }
   ]
 }

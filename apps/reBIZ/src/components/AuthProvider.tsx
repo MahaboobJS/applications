@@ -21,7 +21,7 @@ const Loading = ({ fullScreen }: { fullScreen?: boolean }) => (
         width: '40px',
         height: '40px',
       }}
-      className='auth-spinner'
+      className="auth-spinner"
     />
     <style
       dangerouslySetInnerHTML={{
@@ -38,7 +38,6 @@ const Loading = ({ fullScreen }: { fullScreen?: boolean }) => (
     />
   </div>
 );
-// import { getRoutes } from '@ruyyaan-solutions/reBiz/util-access';
 
 const API_BASE = '/api/v1';
 const AUTH_BASE = '/api/v1/auth';

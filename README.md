@@ -6,17 +6,19 @@
 
 ## 🚀 Project Overview
 
-reBiz is a modern business intelligence platform built with cutting-edge technologies, designed to provide powerful analytics and data visualization capabilities for modern businesses.
+reBiz is a modern business intelligence platform built with cutting-edge
+technologies, designed to provide powerful analytics and data visualization
+capabilities for modern businesses.
 
 ## 👥 Team
 
-| Role | GitHub | Status |
-|------|--------|--------|
-| **Project Architect & Lead** | [@MahaboobJS](https://github.com/MahaboobJS) | ✅ Active |
-| **Collaborator** | [@mehreengh](https://github.com/mehreengh) | ✅ Active |
-| **Collaborator** | [@Ramya21-11-2003](https://github.com/Ramya21-11-2003) | ✅ Active |
-| **Collaborator** | [@Venkatalakshmi2004](https://github.com/Venkatalakshmi2004) | ✅ Active |
-| **Collaborator** | [@wasimshaik111](https://github.com/wasimshaik111) | ✅ Active |
+| Role                         | GitHub                                                       | Status    |
+| ---------------------------- | ------------------------------------------------------------ | --------- |
+| **Project Architect & Lead** | [@MahaboobJS](https://github.com/MahaboobJS)                 | ✅ Active |
+| **Collaborator**             | [@mehreengh](https://github.com/mehreengh)                   | ✅ Active |
+| **Collaborator**             | [@Ramya21-11-2003](https://github.com/Ramya21-11-2003)       | ✅ Active |
+| **Collaborator**             | [@Venkatalakshmi2004](https://github.com/Venkatalakshmi2004) | ✅ Active |
+| **Collaborator**             | [@wasimshaik111](https://github.com/wasimshaik111)           | ✅ Active |
 
 ---
 
@@ -24,12 +26,15 @@ reBiz is a modern business intelligence platform built with cutting-edge technol
 
 ### 🎯 What is this project?
 
-reBiz is a **Business Intelligence Platform** that helps companies analyze their data and make better decisions. Think of it like a dashboard that shows charts, graphs, and reports about business performance.
+reBiz is a **Business Intelligence Platform** that helps companies analyze their
+data and make better decisions. Think of it like a dashboard that shows charts,
+graphs, and reports about business performance.
 
 ### 🏗️ What technologies are we using?
 
 - **Next.js**: A React framework for building web applications
-- **TypeScript**: JavaScript with type safety (catches errors before they happen)
+- **TypeScript**: JavaScript with type safety (catches errors before they
+  happen)
 - **Material-UI**: Pre-built UI components that look professional
 - **Nx**: A tool that helps manage large projects with multiple applications
 - **NextAuth**: Handles user login and authentication
@@ -43,6 +48,7 @@ reBiz is a **Business Intelligence Platform** that helps companies analyze their
 Before you start, you need to install these tools on your computer:
 
 #### 1.1 Install Node.js
+
 - Go to [https://nodejs.org/](https://nodejs.org/)
 - Download the **LTS version** (Long Term Support)
 - Run the installer and follow the instructions
@@ -54,6 +60,7 @@ Before you start, you need to install these tools on your computer:
   You should see version numbers like `v20.x.x` and `9.x.x`
 
 #### 1.2 Install Git
+
 - Go to [https://git-scm.com/](https://git-scm.com/)
 - Download and install Git for your operating system
 - **Verify installation**:
@@ -62,6 +69,7 @@ Before you start, you need to install these tools on your computer:
   ```
 
 #### 1.3 Install Visual Studio Code (Recommended)
+
 - Go to [https://code.visualstudio.com/](https://code.visualstudio.com/)
 - Download and install VS Code
 - Install these essential extensions:
@@ -73,6 +81,7 @@ Before you start, you need to install these tools on your computer:
 ### Step 2: Clone and Setup the Project
 
 #### 2.1 Clone the Repository
+
 ```bash
 # Replace <repository-url> with the actual GitHub repository URL
 git clone <repository-url>
@@ -80,22 +89,29 @@ cd applications
 ```
 
 #### 2.2 Install Dependencies
+
 ```bash
 # This will install all required packages
 npm install
 ```
-**What this does**: Downloads all the libraries and tools needed for the project.
+
+**What this does**: Downloads all the libraries and tools needed for the
+project.
 
 #### 2.3 Start the Development Server
+
 ```bash
 npm run dev
 ```
+
 **What this does**: Starts the application in development mode.
 
 #### 2.4 Open in Browser
+
 Open your web browser and go to: `http://localhost:3000`
 
-🎉 **Congratulations!** If you see the reBiz application, you've successfully set up the project!
+🎉 **Congratulations!** If you see the reBiz application, you've successfully
+set up the project!
 
 ---
 
@@ -134,6 +150,7 @@ applications/                    # Root folder
 ## 🎯 **DAILY DEVELOPMENT WORKFLOW**
 
 ### Starting Your Day
+
 ```bash
 # 1. Get latest changes from GitHub
 git pull origin main
@@ -146,6 +163,7 @@ npm run dev
 ```
 
 ### While Developing
+
 ```bash
 # Check if your code has any errors
 npm run type-check
@@ -158,6 +176,7 @@ npm run test
 ```
 
 ### Before Pushing Code
+
 ```bash
 # 1. Add your changes
 git add .
@@ -175,6 +194,7 @@ git push origin your-branch-name
 ## 📜 **ESSENTIAL COMMANDS FOR FRESHERS**
 
 ### Development Commands
+
 ```bash
 npm run dev                    # Start development server (use this daily)
 npm run build                  # Build the project for production
@@ -182,6 +202,7 @@ npm run type-check            # Check for TypeScript errors
 ```
 
 ### Code Quality Commands
+
 ```bash
 npm run lint                   # Check for code style issues
 npm run lint:fix              # Fix code style issues automatically
@@ -190,6 +211,7 @@ npm run test                   # Run all tests
 ```
 
 ### Git Commands (Beginner Friendly)
+
 ```bash
 git status                     # See what files you've changed
 git add .                      # Stage all changes for commit
@@ -199,6 +221,7 @@ git pull                       # Get latest changes from GitHub
 ```
 
 ### Nx Commands (Advanced)
+
 ```bash
 npx nx graph                  # See visual project structure
 npx nx show projects          # List all projects
@@ -210,6 +233,7 @@ npx nx reset                  # Clear cache if something breaks
 ## 🧑‍💻 **HOW TO ADD NEW FEATURES**
 
 ### 1. Creating a New Page
+
 ```bash
 # Navigate to the app directory
 cd apps/reBiz/src/app
@@ -220,6 +244,7 @@ touch my-new-page/page.tsx
 ```
 
 ### 2. Creating a New Component
+
 ```bash
 # Navigate to components directory
 cd apps/reBiz/src/components
@@ -229,6 +254,7 @@ touch MyNewComponent.tsx
 ```
 
 ### 3. Basic Component Template
+
 ```typescript
 // MyNewComponent.tsx
 import React from 'react';
@@ -238,9 +264,9 @@ interface MyNewComponentProps {
   description?: string;
 }
 
-const MyNewComponent: React.FC<MyNewComponentProps> = ({ 
-  title, 
-  description 
+const MyNewComponent: React.FC<MyNewComponentProps> = ({
+  title,
+  description,
 }) => {
   return (
     <div>
@@ -260,6 +286,7 @@ export default MyNewComponent;
 ### Common Issues and Solutions
 
 #### 1. "npm install" fails
+
 ```bash
 # Clear npm cache and try again
 npm cache clean --force
@@ -268,6 +295,7 @@ npm install
 ```
 
 #### 2. "Module not found" errors
+
 ```bash
 # Make sure all dependencies are installed
 npm install
@@ -277,6 +305,7 @@ pwd  # Should show path ending with 'applications'
 ```
 
 #### 3. TypeScript errors
+
 ```bash
 # Check for specific type errors
 npm run type-check
@@ -285,6 +314,7 @@ npm run type-check
 ```
 
 #### 4. Port 3000 already in use
+
 ```bash
 # Kill the process using port 3000
 npx kill-port 3000
@@ -294,6 +324,7 @@ npm run dev -- --port 3001
 ```
 
 #### 5. Git conflicts
+
 ```bash
 # If you have merge conflicts
 git status                     # See conflicted files
@@ -303,6 +334,7 @@ git commit -m "resolve conflicts"
 ```
 
 #### 6. Build failures
+
 ```bash
 # Clear Nx cache
 npx nx reset
@@ -317,16 +349,21 @@ npm ci
 ## 🎓 **LEARNING RESOURCES FOR FRESHERS**
 
 ### Essential Technologies to Learn
+
 1. **React**: [https://react.dev/learn](https://react.dev/learn)
-2. **TypeScript**: [https://www.typescriptlang.org/docs/](https://www.typescriptlang.org/docs/)
+2. **TypeScript**:
+   [https://www.typescriptlang.org/docs/](https://www.typescriptlang.org/docs/)
 3. **Next.js**: [https://nextjs.org/learn](https://nextjs.org/learn)
-4. **Material-UI**: [https://mui.com/getting-started/](https://mui.com/getting-started/)
+4. **Material-UI**:
+   [https://mui.com/getting-started/](https://mui.com/getting-started/)
 
 ### Git & GitHub
+
 - [Git Handbook](https://guides.github.com/introduction/git-handbook/)
 - [GitHub Flow](https://guides.github.com/introduction/flow/)
 
 ### VS Code Tips
+
 - Learn keyboard shortcuts: `Ctrl+Shift+P` (Command Palette)
 - Use integrated terminal: `Ctrl+`` (backtick)
 - Format code: `Shift+Alt+F`
@@ -336,6 +373,7 @@ npm ci
 ## 🔄 **GIT WORKFLOW FOR TEAMS**
 
 ### Branch Strategy
+
 ```bash
 # 1. Always start from main branch
 git checkout main
@@ -356,44 +394,51 @@ git push origin feature/my-new-feature
 ```
 
 ### Naming Conventions
-- **Branches**: `feature/login-page`, `bugfix/header-styling`, `hotfix/security-issue`
-- **Commits**: Use conventional commits (the `npm run commit` command helps with this)
-- **Files**: Use PascalCase for components (`LoginPage.tsx`), camelCase for utilities (`authUtils.ts`)
+
+- **Branches**: `feature/login-page`, `bugfix/header-styling`,
+  `hotfix/security-issue`
+- **Commits**: Use conventional commits (the `npm run commit` command helps with
+  this)
+- **Files**: Use PascalCase for components (`LoginPage.tsx`), camelCase for
+  utilities (`authUtils.ts`)
 
 ---
 
 ## 🏗️ **DETAILED TECH STACK**
 
-| Technology | Purpose | Why We Use It |
-|------------|---------|---------------|
-| **Next.js 15** | React Framework | Server-side rendering, great performance |
-| **TypeScript** | Programming Language | Catches errors before runtime, better code quality |
-| **Material-UI** | UI Components | Pre-built, accessible, professional-looking components |
-| **NextAuth.js** | Authentication | Secure, easy-to-implement user authentication |
-| **TanStack Query** | Data Fetching | Smart caching, background updates, error handling |
-| **Nx** | Monorepo Tool | Manages multiple projects efficiently |
-| **Jest** | Testing Framework | Unit and integration testing |
-| **ESLint** | Code Linting | Enforces code quality and consistency |
-| **Prettier** | Code Formatting | Automatically formats code for consistency |
-| **Husky** | Git Hooks | Runs quality checks before commits |
+| Technology         | Purpose              | Why We Use It                                          |
+| ------------------ | -------------------- | ------------------------------------------------------ |
+| **Next.js 15**     | React Framework      | Server-side rendering, great performance               |
+| **TypeScript**     | Programming Language | Catches errors before runtime, better code quality     |
+| **Material-UI**    | UI Components        | Pre-built, accessible, professional-looking components |
+| **NextAuth.js**    | Authentication       | Secure, easy-to-implement user authentication          |
+| **TanStack Query** | Data Fetching        | Smart caching, background updates, error handling      |
+| **Nx**             | Monorepo Tool        | Manages multiple projects efficiently                  |
+| **Jest**           | Testing Framework    | Unit and integration testing                           |
+| **ESLint**         | Code Linting         | Enforces code quality and consistency                  |
+| **Prettier**       | Code Formatting      | Automatically formats code for consistency             |
+| **Husky**          | Git Hooks            | Runs quality checks before commits                     |
 
 ---
 
 ## 📋 **DEVELOPMENT CHECKLIST**
 
 ### Before Starting Work
+
 - [ ] Pull latest changes: `git pull origin main`
 - [ ] Install dependencies: `npm install`
 - [ ] Start dev server: `npm run dev`
 - [ ] Create feature branch: `git checkout -b feature/my-feature`
 
 ### While Developing
+
 - [ ] Write meaningful commit messages
 - [ ] Test your changes locally
 - [ ] Check for TypeScript errors: `npm run type-check`
 - [ ] Fix linting issues: `npm run lint:fix`
 
 ### Before Submitting PR
+
 - [ ] All tests pass: `npm run test`
 - [ ] Code is properly formatted: `npm run format`
 - [ ] No TypeScript errors: `npm run type-check`
@@ -405,6 +450,7 @@ git push origin feature/my-new-feature
 ## 🆘 **GETTING HELP**
 
 ### When You're Stuck
+
 1. **Check the console**: Look for error messages in browser dev tools
 2. **Read the error**: Error messages usually tell you what's wrong
 3. **Google the error**: Copy-paste error messages into Google
@@ -412,6 +458,7 @@ git push origin feature/my-new-feature
 5. **Create GitHub Issue**: For bugs or feature requests
 
 ### Useful VS Code Shortcuts
+
 - `Ctrl+Shift+P`: Open command palette
 - `Ctrl+`` : Toggle terminal
 - `Ctrl+/`: Comment/uncomment lines
@@ -424,12 +471,14 @@ git push origin feature/my-new-feature
 ## 📞 **SUPPORT & COMMUNICATION**
 
 ### For Questions:
+
 - **Technical Issues**: Create GitHub Issues
 - **Setup Problems**: Ask in team chat
 - **Code Reviews**: Tag team members in Pull Requests
 - **General Questions**: Use GitHub Discussions
 
 ### Team Communication
+
 - **Daily Updates**: Share what you're working on
 - **Blockers**: Report immediately if you're stuck
 - **Code Reviews**: Always review each other's code
@@ -439,6 +488,7 @@ git push origin feature/my-new-feature
 
 **Built with ❤️ by the reBiz Team**
 
-*Happy Coding! Remember, everyone was a beginner once. Don't hesitate to ask questions and learn from each other.* 🚀
+_Happy Coding! Remember, everyone was a beginner once. Don't hesitate to ask
+questions and learn from each other._ 🚀
 
-*Powered by Nx, Next.js, and modern web technologies*
+_Powered by Nx, Next.js, and modern web technologies_

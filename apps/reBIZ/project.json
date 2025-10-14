@@ -4,7 +4,7 @@
   "projectType": "application",
   "prefix": "app",
   "sourceRoot": "apps/reBiz/src",
-  "tags": [],
+  "tags": ["type:app", "scope:reBiz"],
   "targets": {
     "build": {
       "executor": "@nx/next:build",
