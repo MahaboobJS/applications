@@ -1,0 +1,18 @@
+{
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0dXNlciIsInBlcm1pc3Npb25zIjp7ImFkbWluIjp0cnVlLCJyb2xlIjoiQURNSU4iLCJwaXBlbGluZXMiOnRydWUsImV0bHMiOnRydWUsImNvbm5lY3Rpb25zIjp0cnVlLCJkYXNoYm9hcmRzIjp0cnVlLCJqb2JzIjp0cnVlLCJhdWRpdHMiOnRydWUsImdlbmFpIjp0cnVlLCJyZXBvcnRzIjp0cnVlfSwiZXhwIjoxNzYwODAwNjgyfQ.I9clfNXmewNUWHR_UYdowx5dJhRs7WFI0WjI35DsGcE",
+    "token_type": "bearer",
+    "user_id": 1003,
+    "username": "testuser",
+    "email": "test@example.com",
+    "permissions": {
+      "admin": true,
+      "pipelines": true,
+      "etls": true,
+      "connections": true,
+      "dashboards": true,
+      "jobs": true,
+      "audits": true,
+      "genai": true,
+      "reports": true
+    }
+  }
