@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1000,
+    "connector_type": "MYSQL",
+    "description": "MySql",
+    "type": "Database",
+    "sub_type": null,
+    "enabled": true,
+    "extra": null
+  },
+  {
+    "id": 1001,
+    "connector_type": "POSTGRES",
+    "description": "PostgreSQL",
+    "type": "Database",
+    "sub_type": null,
+    "enabled": true,
+    "extra": null
+  },
+  {
+    "id": 1002,
+    "connector_type": "SQLSERVER",
+    "description": "Microsoft SQL Server",
+    "type": "Database",
+    "sub_type": null,
+    "enabled": true,
+    "extra": null
+  },
+  {
+    "id": 1003,
+    "connector_type": "REDSHIFT",
+    "description": "Amazon Redshift",
+    "type": "Database",
+    "sub_type": null,
+    "enabled": true,
+    "extra": null
+  },
+  {
+    "id": 1004,
+    "connector_type": "GA",
+    "description": "Google Analytics",
+    "type": "Database",
+    "sub_type": null,
+    "enabled": true,
+    "extra": null
+  },
+  {
+    "id": 1005,
+    "connector_type": "S3",
+    "description": "Amazon S3",
+    "type": "Csv",
+    "sub_type": null,
+    "enabled": true,
+    "extra": null
+  },
+  {
+    "id": 1006,
+    "connector_type": "LFS",
+    "description": "File System",
+    "type": "Csv",
+    "sub_type": null,
+    "enabled": true,
+    "extra": null
+  },
+  {
+    "id": 1007,
+    "connector_type": "GDRIVE",
+    "description": "Google Drive",
+    "type": "Csv",
+    "sub_type": null,
+    "enabled": true,
+    "extra": null
+  },
+  {
+    "id": 1008,
+    "connector_type": "ICEBERG",
+    "description": "Iceberg",
+    "type": "Database",
+    "sub_type": null,
+    "enabled": true,
+    "extra": null
+  },
+  {
+    "id": 1009,
+    "connector_type": "DUCKDB",
+    "description": "DuckDB",
+    "type": "DuckDB",
+    "sub_type": null,
+    "enabled": true,
+    "extra": null
+  },
+  {
+    "id": 1010,
+    "connector_type": "ORACLE",
+    "description": "Oracle",
+    "type": "Database",
+    "sub_type": null,
+    "enabled": true,
+    "extra": null
+  }
+]
