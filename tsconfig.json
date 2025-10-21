@@ -20,6 +20,12 @@
     },
     {
       "path": "./apps/student-portal-ui"
+    },
+    {
+      "path": "./apps/auth-frontend"
+    },
+    {
+      "path": "./apps/auth-backend"
     }
   ]
 }
