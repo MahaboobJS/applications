@@ -1,13 +1,11 @@
-import { AccessAction, AccessRole } from '@prisma/client';
+import { AccessRole } from './types';
+
+// Define AccessAction as a string type for MongoDB
+type AccessAction = string;
 
 import { routes } from './getRoutes';
 
-const roleDefaultRouteMap: Record<string, string> = {
-  [AccessAction.ORG_CREATE]: routes.ADMIN.url,
-  [AccessAction.SITE_CREATE]: routes.ADMIN.url,
-  [AccessAction.WORKFLOW_READ_PERMIT]: routes.PERMIT_SCHEDULE.url,
-  [AccessAction.WORKFLOW_ADD_PRE_WORK_GAS_RESULTS]: routes.GAS_TESTER.url,
-};
+const roleDefaultRouteMap: Record<string, string> = {};
 
 /**
  * Get homepage

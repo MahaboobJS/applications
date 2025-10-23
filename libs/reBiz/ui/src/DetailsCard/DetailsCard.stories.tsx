@@ -5,7 +5,7 @@ import { DetailsCard } from './DetailsCard';
 
 const meta: Meta<typeof DetailsCard> = {
   component: DetailsCard,
-  title: 'Work Permit / UI / DetailsCard',
+  title: 'Rebiz / UI / DetailsCard',
 };
 
 export default meta;

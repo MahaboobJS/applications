@@ -1,0 +1,13 @@
+{{> GeneratedFileHeader }}
+
+{{#if dynamicParts}}
+import type { {{prismaCase domain}} } from '@prisma/client';
+{{/if}}
+import { useQueryClient } from '@tanstack/react-query';
+
+import { {{domain}}Keys } from '../queries/keys';
+
+export const useInvalidate{{pascalCase key}} = ({{{arguments dynamicParts domain}}}{{#if this.dynamicParts}} & Record<string, string>{{/if}}) => {
+  const queryClient = useQueryClient();
+  return () => queryClient.invalidateQueries({ queryKey: {{domain}}Keys.{{key}}({{{params dynamicParts}}}) });
+};

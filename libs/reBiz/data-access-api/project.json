@@ -3,16 +3,21 @@
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/reBiz/data-access-api/src",
   "projectType": "library",
-  "tags": ["type:data-access"],
+  "tags": ["type:data"],
   "targets": {
     "lint": {
-      "executor": "@nx/eslint:lint"
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/reBiz/data-access-api/**/*.{ts,tsx,js,jsx}"]
+      }
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/reBiz/data-access-api/jest.config.ts"
+        "jestConfig": "libs/reBiz/data-access-api/jest.config.ts",
+        "passWithNoTests": true
       }
     }
   }

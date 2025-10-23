@@ -5,7 +5,7 @@ import { NavigationRoutes } from './lib/types';
 
 export const sideNavigationRoutes: NavigationRoutes = [
   {
-    text: 'Work Permit',
+    text: 'Rebiz',
     icon: IconsList.assignment,
     link: routes.PERMIT_SCHEDULE.url,
     accessFeatureFlag: 'permit',
@@ -44,7 +44,7 @@ export const userInfoRoutes: NavigationRoutes = [
     accessFeatureFlag: 'profile',
   },
   {
-    text: 'My Work Permits',
+    text: 'My Rebizs',
     icon: IconsList.list,
     link: routes.PERMIT_SCHEDULE.url,
     accessFeatureFlag: 'myPermits',

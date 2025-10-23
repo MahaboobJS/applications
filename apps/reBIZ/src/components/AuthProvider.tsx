@@ -40,7 +40,7 @@ const Loading = ({ fullScreen }: { fullScreen?: boolean }) => (
 );
 
 const API_BASE = '/api/v1';
-const AUTH_BASE = '/api/v1/auth';
+const AUTH_BASE = '/auth';
 
 export const routes: Record<string, Route> = {
   API: {

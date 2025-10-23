@@ -1,4 +1,4 @@
-import { AccessRole } from '@prisma/client';
+import { AccessRole } from './types';
 
 export const flattenActionsList = (accessRoles: AccessRole[]): string[] => {
   return accessRoles.reduce((acc, role) => {

@@ -9,19 +9,44 @@
   "files": [],
   "include": [],
   "references": [
-    { "path": "./apps/reBiz" },
-    { "path": "./libs/shared/ui" },
-    { "path": "./libs/shared/ui-icons" },
-    { "path": "./libs/shared/ui-assets" },
-    { "path": "./libs/shared/util-ui" },
-    { "path": "./libs/shared/util-errors" },
-    { "path": "./libs/shared/util-test" },
-    { "path": "./libs/reBiz/util-test" },
-    { "path": "./libs/reBiz/feature-side-navigation" },
-    { "path": "./libs/reBiz/ui" },
-    { "path": "./libs/reBiz/util-api" },
-    { "path": "./libs/reBiz/util-env" },
-    // { "path": "./libs/reBiz/util-access" },
-    { "path": "./libs/reBiz/data-access-api" }
+    {
+      "path": "./apps/reBiz"
+    },
+    {
+      "path": "./libs/shared/ui"
+    },
+    {
+      "path": "./libs/shared/ui-icons"
+    },
+    {
+      "path": "./libs/shared/util-errors"
+    },
+    {
+      "path": "./libs/reBiz/feature-side-navigation"
+    },
+    {
+      "path": "./libs/reBiz/ui"
+    },
+    {
+      "path": "./libs/reBiz/util-api"
+    },
+    {
+      "path": "./libs/reBiz/util-env"
+    },
+    {
+      "path": "./libs/reBiz/data-access-api"
+    },
+    {
+      "path": "./libs/reBiz/data-access-zeebe"
+    },
+    {
+      "path": "./libs/reBiz/util-access"
+    },
+    {
+      "path": "./libs/shared/ui-loader"
+    },
+    {
+      "path": "./libs/reBiz/util-user"
+    }
   ]
 }

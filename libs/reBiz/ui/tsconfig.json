@@ -10,6 +10,15 @@
   "include": [],
   "references": [
     {
+      "path": "../../shared/ui-loader"
+    },
+    {
+      "path": "../../shared/ui-icons"
+    },
+    {
+      "path": "../../shared/ui"
+    },
+    {
       "path": "./tsconfig.lib.json"
     },
     {

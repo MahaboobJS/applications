@@ -16,7 +16,6 @@ export * from './PageContainer';
 export * from './Pages/ErrorPage';
 export * from './Tables';
 export * from './TableSearch';
-export * from './Timeline';
 export * from './List';
 export * from './Toolbar';
 export * from './Typography';

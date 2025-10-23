@@ -74,7 +74,7 @@ export function LoginPageForStories(params: ReadonlyURLSearchParams) {
 
           <Layout.BoxCenter>
             <TextLarge variant="inverted" weight="bold">
-              Digital Work Permit
+              Rebiz
             </TextLarge>
           </Layout.BoxCenter>
           <Layout.BoxVertical sx={{ width: '100%', gap: 2 }}>

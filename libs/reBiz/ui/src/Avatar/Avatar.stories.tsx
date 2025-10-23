@@ -4,7 +4,7 @@ import { Avatar } from './Avatar';
 
 const meta: Meta<typeof Avatar> = {
   component: Avatar,
-  title: 'Work Permit / UI / Avatar',
+  title: 'Rebiz / UI / Avatar',
 };
 
 export default meta;

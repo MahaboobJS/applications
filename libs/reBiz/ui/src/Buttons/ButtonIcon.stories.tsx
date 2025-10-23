@@ -6,7 +6,7 @@ import { ButtonIcon } from './ButtonIcon';
 
 const meta: Meta<typeof ButtonIcon> = {
   component: ButtonIcon,
-  title: 'Work Permit / UI / Buttons / ButtonIcon',
+  title: 'Rebiz / UI / Buttons / ButtonIcon',
 };
 
 export default meta;

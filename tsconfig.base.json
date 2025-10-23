@@ -25,7 +25,7 @@
         "./libs/reBiz/feature-side-navigation/src/index.ts"
       ],
       "@ruyyaan/reBiz/ui": ["./libs/reBiz/ui/src/index.ts"],
-      // "@ruyyaan/reBiz/util-access": ["./libs/reBiz/util-access/src/index.ts"],
+      "@ruyyaan/reBiz/util-access": ["./libs/reBiz/util-access/src/index.ts"],
       "@ruyyaan/reBiz/util-api": ["./libs/reBiz/util-api/src/index.ts"],
       "@ruyyaan/reBiz/util-env": ["./libs/reBiz/util-env/src/index.ts"],
       "@ruyyaan/reBiz/util-test": ["./libs/reBiz/util-test/src/index.ts"],

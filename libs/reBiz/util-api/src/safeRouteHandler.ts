@@ -1,6 +1,6 @@
-import { Prisma } from '@prisma/client';
+// Removed Prisma import - using MongoDB now
 import { NextRequest, NextResponse } from 'next/server';
-import { ZodError } from 'zod';
+// Removed zod import - using simple error handling
 
 import { CustomErrorType, HTTPErrors } from '@ruyyaan/shared/util-errors';
 import { AccessRequired } from '@ruyyaan/reBiz/util-access';
@@ -8,7 +8,7 @@ import { reportError } from '@ruyyaan/reBiz/util-error';
 import { Session } from '@ruyyaan/reBiz/util-user';
 
 import { generateApiError } from './generateApiError';
-import { handleZodErrors } from './handleZodErrors';
+// Removed handleZodErrors import - using simple error handling
 import { processAccessFromMiddleware } from './processAccessFromMiddleware';
 import { ErrorResponse } from './types';
 
@@ -45,17 +45,17 @@ export const safeRouteHandler = async <SuccessResponse>(
     const { id } = reportError(error);
     const supportCodeMessage = `An internal error occurred. Please contact support with reference: ${id}`;
 
-    if (error instanceof ZodError) {
-      const errorInformation = handleZodErrors(error);
-
+    // Simple validation error handling without zod
+    if (error instanceof Error && error.name === 'ValidationError') {
       return generateApiError(
-        HTTPErrors.badRequest('Validation Error', 'validation-error', errorInformation)
+        HTTPErrors.badRequest('Validation Error', 'validation-error', { message: error.message })
       );
     }
 
-    if (error instanceof Prisma.PrismaClientKnownRequestError) {
-      return generateApiError(HTTPErrors.internalError(supportCodeMessage, 'database-error'));
-    }
+    // MongoDB error handling can be added here if needed
+    // if (error instanceof MongoError) {
+    //   return generateApiError(HTTPErrors.internalError(supportCodeMessage, 'database-error'));
+    // }
 
     const possibleCustomError = error as CustomErrorType;
 

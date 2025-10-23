@@ -1,0 +1,36 @@
+{{> GeneratedFileHeader }}
+
+{{#if endpoint.dynamicParams}}
+import type { {{prismaCase domain}} } from '@prisma/client';
+{{/if}}
+import { useQuery } from '@tanstack/react-query';
+
+import { createUrlFromPattern } from '@ruyyaan/reBiz/util-access';
+import { APIReturnType, axiosFetch } from '@ruyyaan/reBiz/util-api';
+
+import { API_BASE } from '../../constants';
+import { {{endpoint.name}} as APIHandler{{#if endpoint.dynamicParams}}, EndpointParams{{/if}} } from '../api/{{endpoint.name}}';
+
+import { {{domain}}Keys } from './keys';
+
+const network = (
+  {{#if endpoint.dynamicParams}}params: EndpointParams['params']{{/if}}
+): APIReturnType<typeof APIHandler{{#if endpoint.dynamicParams}}, EndpointParams{{/if}}> => {
+  const apiUrl = createUrlFromPattern(`${API_BASE}{{endpoint.urlRoute}}`, {{#if endpoint.dynamicParams}}params{{else}}{}{{/if}});
+  return axiosFetch({
+    apiUrl,
+    method: '{{endpoint.verb}}',
+  });
+};
+
+export const use{{pascalCase endpoint.name}}Query = ({{{arguments endpoint.dynamicParams domain endpoint.modelReplacements}}}) => {
+  return useQuery({
+    {{#equals endpoint.key "all"}}
+    queryKey: {{domain}}Keys.{{endpoint.key}}(),
+    {{else}}
+    queryKey: {{domain}}Keys.{{endpoint.key}}({{params endpoint.dynamicParams}}),
+    {{/equals}}
+    queryFn: () => network({{#if endpoint.dynamicParams}}{{params endpoint.dynamicParams}}{{/if}}),
+    {{!-- enabled: !!params.id, --}}
+  });
+};

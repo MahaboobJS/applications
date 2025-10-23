@@ -4,7 +4,6 @@ export * from './axiosFetch';
 export * from './generateApiError';
 export * from './generateApiSuccess';
 export * from './safeRouteHandler';
-export * from './parseSchema';
 export * from './useApiQuery';
 export * from './useGenericQuery';
 

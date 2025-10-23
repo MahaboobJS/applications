@@ -1,0 +1,54 @@
+{{> GeneratedFileHeader }}
+
+{{!-- import type { {{sentenceCase domain}} } from '@prisma/client'; --}}
+import { useMutation } from '@tanstack/react-query';
+
+import { createUrlFromPattern } from '@ruyyaan/reBiz/util-access';
+import { APIReturnType, axiosFetch } from '@ruyyaan/reBiz/util-api';
+
+import { API_BASE } from '../../constants';
+import { 
+  {{endpoint.name}} as APIHandler,
+  {{#notequals endpoint.verb 'DELETE'}}
+  EndpointData,
+  {{/notequals}}
+  EndpointParams,  
+} from '../api/{{endpoint.name}}';
+{{#if endpoint.invalidate}}
+import { useInvalidate{{pascalCase endpoint.invalidate}} } from '../queries/useInvalidate{{pascalCase endpoint.invalidate}}';
+{{/if}}
+
+const network = (
+  params: EndpointParams['params'] 
+  {{#notequals endpoint.verb 'DELETE'}}
+  & EndpointData,
+  {{/notequals}}
+): APIReturnType<typeof APIHandler, EndpointParams> => {
+  const apiUrl = createUrlFromPattern(`${API_BASE}{{endpoint.urlRoute}}`, {{objectParams endpoint.dynamicParams 'params'}});
+  return axiosFetch({
+    apiUrl,
+    method: '{{endpoint.verb}}',
+    {{#notequals endpoint.verb 'DELETE'}}
+    body: params.data,
+    {{/notequals}}
+  });
+};
+
+{{#if endpoint.invalidate}}
+export const use{{pascalCase endpoint.name}}Mutation = ({{{argumentsManual endpoint.dynamicParams 'string' }}}) => {
+  const invalidate = useInvalidate{{pascalCase endpoint.invalidate}}({{{params endpoint.dynamicParams}}});
+
+  return useMutation({
+    mutationFn: network,
+    onSettled: () => {
+      invalidate();
+    },
+  });
+};
+{{else}}
+export const use{{pascalCase endpoint.name}}Mutation = () => {
+  return useMutation({
+    mutationFn: network,
+  });
+};
+{{/if}}

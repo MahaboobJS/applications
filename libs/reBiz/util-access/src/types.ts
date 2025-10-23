@@ -1,4 +1,11 @@
-import { AccessRole } from '@prisma/client';
+// MongoDB-based AccessRole type
+export interface AccessRole {
+  id: string;
+  name: string;
+  AccessScope: string;
+  AccessAction: string[];
+  scopeDomain?: string;
+}
 
 type CustomAccess = {
   customAccessRequirements: (args: unknown) => void;

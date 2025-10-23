@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import type { AccessRole } from '@prisma/client';
+import type { AccessRole } from './types';
 import type { JWT as DefaultJWT } from 'next-auth/jwt';
 import type { UseSessionOptions } from 'next-auth/react';
 import { useSession } from 'next-auth/react';

@@ -1,0 +1,18 @@
+{{> GeneratedFileHeader }}
+
+{{#each endpoints}}
+import { {{this}} } from './api/{{this}}';
+{{/each}}
+
+{{#each queries}}
+export * from './queries/use{{pascalCase this}}Query';
+{{/each}}
+{{#each mutations}}
+export * from './mutations/use{{pascalCase this}}Mutation';
+{{/each}}
+
+export const {{apiName domain}} = {
+  {{#each endpoints}}
+  {{this}},
+  {{/each}}
+};

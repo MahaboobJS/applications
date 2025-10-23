@@ -1,4 +1,5 @@
-import { AccessScope } from '@prisma/client';
+// Define AccessScope as a string type for MongoDB
+type AccessScope = string;
 
 import { AccessRequired, AccessRoleWithCustom } from './types';
 
@@ -97,7 +98,7 @@ export const canAccess = (
   // thus we can put them all into one array, as other orgs roles will not be present here
   const mergedRoles: [AccessRoleWithCustom, AccessRoleWithCustom] = currentAccess.reduce(
     (result, role) => {
-      if (role.AccessScope.toString() === AccessScope.ORG.toString()) {
+      if (role.AccessScope.toString() === 'ORG') {
         return [
           {
             ...result[0],
@@ -107,7 +108,7 @@ export const canAccess = (
         ];
       }
 
-      if (role.AccessScope.toString() === AccessScope.SYSTEM.toString()) {
+      if (role.AccessScope.toString() === 'SYSTEM') {
         return [
           result[0],
           {

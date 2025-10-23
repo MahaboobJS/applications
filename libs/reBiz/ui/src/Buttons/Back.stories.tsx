@@ -5,7 +5,7 @@ import { BackButton } from './Back';
 
 const meta: Meta<typeof BackButton> = {
   component: BackButton,
-  title: 'Work Permit / UI / Buttons / Back',
+  title: 'Rebiz / UI / Buttons / Back',
 };
 
 export default meta;

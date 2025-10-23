@@ -10,7 +10,7 @@ const PrimaryButton = Buttons.PrimaryButton;
 
 const meta: Meta<typeof PrimaryButton> = {
   component: PrimaryButton,
-  title: 'Work Permit / UI / Buttons / Primary',
+  title: 'Rebiz / UI / Buttons / Primary',
   decorators: [
     (Story) => (
       <ThemeProvider theme={themes.customerA}>

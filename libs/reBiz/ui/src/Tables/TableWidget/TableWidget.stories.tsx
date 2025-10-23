@@ -8,7 +8,7 @@ import { TableWidget } from './TableWidget';
 
 const Story: Meta<typeof TableWidget> = {
   component: TableWidget,
-  title: 'Work Permit / UI / TableWidget',
+  title: 'Rebiz / UI / TableWidget',
 };
 export default Story;
 

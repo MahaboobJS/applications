@@ -1,10 +1,10 @@
 export default {
-  displayName: 'reBiz-data-access-api',
+  displayName: 'work-permit-data-access-api',
   preset: '../../../jest.preset.js',
+  testEnvironment: 'node',
   transform: {
-    '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nx/react/plugins/jest',
-    '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nx/react/babel'] }],
+    '^.+\\.[tj]s$': ['ts-jest', { tsconfig: '<rootDir>/tsconfig.spec.json' }],
   },
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../../coverage/libs/reBiz/data-access-api',
+  moduleFileExtensions: ['ts', 'js', 'html'],
+  coverageDirectory: '../../../coverage/libs/work-permit/data-access-api',
 };

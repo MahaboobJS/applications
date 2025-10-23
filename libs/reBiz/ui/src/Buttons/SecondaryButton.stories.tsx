@@ -10,7 +10,7 @@ const SecondaryButton = Buttons.SecondaryButton;
 
 const meta: Meta<typeof SecondaryButton> = {
   component: SecondaryButton,
-  title: 'Work Permit / UI / Buttons / Secondary',
+  title: 'Rebiz / UI / Buttons / Secondary',
   decorators: [
     (Story) => (
       <ThemeProvider theme={themes.customerA}>

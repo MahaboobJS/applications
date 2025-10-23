@@ -1,6 +1,5 @@
 import React from 'react';
 
-import * as Sentry from '@sentry/nextjs';
 
 import { Buttons, Layout } from '@ruyyaan/shared/ui';
 
@@ -14,9 +13,6 @@ export function ErrorPage({
   error: Error;
   reset?: () => void;
 }>) {
-  React.useEffect(() => {
-    Sentry.captureException(error);
-  }, [error]);
   return (
     <PageContainer>
       <Layout.BoxCenter>

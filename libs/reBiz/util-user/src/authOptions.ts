@@ -1,26 +1,16 @@
-import { PrismaAdapter } from '@next-auth/prisma-adapter';
+import { MongoDBAdapter } from '@next-auth/mongodb-adapter';
 import { AuthOptions } from 'next-auth';
-import { Provider } from 'next-auth/providers';
 import CredentialsProvider from 'next-auth/providers/credentials';
 import GoogleProvider from 'next-auth/providers/google';
-import KeycloakProvider from 'next-auth/providers/keycloak';
 
-import { DataAccessLog, DataAccessUser } from '@ruyyaan/reBiz/data-access-prisma';
-import { getPrismaClient, getRoutes, isE2EEnabled } from '@ruyyaan/reBiz/util-access';
+import { getMongoClient, getRoutes, isE2EEnabled } from '@ruyyaan/reBiz/util-access';
 
 const routes = getRoutes();
-const prisma = getPrismaClient();
+const clientPromise = getMongoClient();
 
-const prismaAdapter = PrismaAdapter(prisma);
-prismaAdapter.linkAccount = async (data) => {
-  delete data['refresh_expires_in'];
-  delete data['not-before-policy'];
-  await prisma.account.create({
-    data,
-  });
-};
+const mongoAdapter = MongoDBAdapter(clientPromise);
 
-const providersList: Provider[] = [];
+const providersList: any[] = [];
 
 if (process.env['REBIZ_APP_AUTH_GOOGLE_ID']) {
   providersList.push(
@@ -47,15 +37,6 @@ if (process.env['REBIZ_APP_AUTH_GOOGLE_ID']) {
   );
 }
 
-if (process.env['REBIZ_APP_AUTH_KEYCLOAK_ID']) {
-  providersList.push(
-    KeycloakProvider({
-      clientId: process.env['REBIZ_APP_AUTH_KEYCLOAK_ID'] ?? '',
-      clientSecret: process.env['REBIZ_APP_AUTH_KEYCLOAK_SECRET'] ?? '',
-      issuer: process.env['REBIZ_APP_AUTH_KEYCLOAK_ISSUER'] ?? '',
-    })
-  );
-}
 
 if (isE2EEnabled()) {
   providersList.push(
@@ -88,19 +69,17 @@ export const authOptions: AuthOptions = {
   session: {
     strategy: 'jwt',
   },
-  adapter: prismaAdapter,
+  adapter: mongoAdapter,
   providers: providersList,
 
   events: {
     signIn: async (message) => {
-      DataAccessLog.createLogByType.userLogin({
-        userId: message.user.id,
-      });
+      // TODO: Implement MongoDB-based logging
+      console.log('User signed in:', message.user.id);
     },
     signOut: async (message) => {
-      DataAccessLog.createLogByType.userLogout({
-        userId: message.token.sub,
-      });
+      // TODO: Implement MongoDB-based logging
+      console.log('User signed out:', message.token.sub);
     },
   },
 
@@ -122,16 +101,13 @@ export const authOptions: AuthOptions = {
      *   const { token } = request.nextauth;
      * 2. It is also passed into session below
      */
-    async jwt({}) {
+    async jwt({ token }) {
       if (!token.sub) {
         throw new Error(`Error fetching default user profile. Check your auth provider.`);
       }
-      const sessionInfo = await DataAccessUser.getUserSession(token.sub);
-
-      return {
-        ...token,
-        ...sessionInfo,
-      };
+      // TODO: Implement MongoDB-based user session retrieval
+      // For now, return the token as-is
+      return token;
     },
     /**
      * Add notes here why we use 'session'

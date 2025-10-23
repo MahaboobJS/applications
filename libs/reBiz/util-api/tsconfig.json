@@ -10,6 +10,21 @@
   "include": [],
   "references": [
     {
+      "path": "../util-access"
+    },
+    {
+      "path": "../util-user"
+    },
+    {
+      "path": "../util-env"
+    },
+    {
+      "path": "../../shared/util-errors"
+    },
+    {
+      "path": "../ui"
+    },
+    {
       "path": "./tsconfig.lib.json"
     },
     {

@@ -1,4 +1,5 @@
-import { AccessAction } from '@prisma/client';
+// Define AccessAction as a string type for MongoDB
+type AccessAction = string;
 
 import { mockGenerateRoles } from '@ruyyaan/reBiz/util-test';
 

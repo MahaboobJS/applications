@@ -10,6 +10,9 @@
   "include": [],
   "references": [
     {
+      "path": "../util-env"
+    },
+    {
       "path": "./tsconfig.lib.json"
     },
     {

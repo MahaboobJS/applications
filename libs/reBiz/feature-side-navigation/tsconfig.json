@@ -10,6 +10,27 @@
   "include": [],
   "references": [
     {
+      "path": "../data-access-zeebe"
+    },
+    {
+      "path": "../util-user"
+    },
+    {
+      "path": "../data-access-api"
+    },
+    {
+      "path": "../ui"
+    },
+    {
+      "path": "../util-env"
+    },
+    {
+      "path": "../../shared/ui-icons"
+    },
+    {
+      "path": "../../shared/ui"
+    },
+    {
       "path": "./tsconfig.lib.json"
     },
     {

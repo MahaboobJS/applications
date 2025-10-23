@@ -8,22 +8,6 @@
     "lint": {
       "executor": "@nx/eslint:lint"
     },
-    "test-full": {
-      "executor": "nx:run-commands",
-      "options": {
-        "commands": [
-          {
-            "command": "nx generate-prisma reBiz",
-            "forwardAllArgs": false
-          },
-          "nx test reBiz-util-access"
-        ],
-        "options": {
-          "cwd": "apps/reBiz"
-        },
-        "parallel": false
-      }
-    },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],

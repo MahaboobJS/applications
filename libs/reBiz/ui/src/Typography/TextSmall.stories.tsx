@@ -5,7 +5,7 @@ import { TextSmall } from './TextSmall';
 
 const meta: Meta<typeof TextSmall> = {
   component: TextSmall,
-  title: 'Work Permit / UI / Typography / TextSmall',
+  title: 'Rebiz / UI / Typography / TextSmall',
 };
 
 export default meta;

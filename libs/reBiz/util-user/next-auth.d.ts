@@ -1,16 +1,16 @@
-import type { Role } from '@prisma/client';
 import { DefaultSession } from 'next-auth';
+import { AccessRole } from './types';
 
 declare module 'next-auth' {
   type Session = {
     user: {
-      roles: Role[];
+      roles: AccessRole[];
     } & DefaultSession['user'];
   };
 }
 
 declare module 'next-auth/jwt' {
   type JWT = {
-    roles: Role[];
+    roles: AccessRole[];
   };
 }

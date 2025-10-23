@@ -5,7 +5,7 @@ import { TextLarge } from './TextLarge';
 
 const meta: Meta<typeof TextLarge> = {
   component: TextLarge,
-  title: 'Work Permit / UI / Typography / TextLarge',
+  title: 'Rebiz / UI / Typography / TextLarge',
 };
 
 export default meta;
