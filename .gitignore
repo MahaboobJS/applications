@@ -1,3 +1,6 @@
+/Connections-e2e/
+/package-lock.json
+
 # See https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
 # compiled output
@@ -66,7 +69,6 @@ npm-debug.*
 web-build/
 cache/
 
-
 test-output
 
 # Next.js
@@ -75,5 +77,3 @@ out
 
 vite.config.*.timestamp*
 vitest.config.*.timestamp*
-
-
