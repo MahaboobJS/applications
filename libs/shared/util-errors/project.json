@@ -3,19 +3,11 @@
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/shared/util-errors/src",
   "projectType": "library",
+  "tags": ["type:util"],
   "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/libs/shared/util-errors",
-        "main": "libs/shared/util-errors/src/index.ts",
-        "tsConfig": "libs/shared/util-errors/tsconfig.lib.json",
-        "assets": ["libs/shared/util-errors/*.md"]
-      }
-    },
     "lint": {
-      "executor": "@nx/eslint:lint"
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
     },
     "test": {
       "executor": "@nx/jest:jest",
@@ -23,9 +15,13 @@
       "options": {
         "jestConfig": "libs/shared/util-errors/jest.config.ts",
         "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
       }
     }
-  },
-  "tags": ["scope:shared", "type:util"]
+  }
 }
-

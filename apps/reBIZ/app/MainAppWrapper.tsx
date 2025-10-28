@@ -4,7 +4,7 @@ import * as React from 'react';
 import { useSession } from 'next-auth/react';
 
 // import { SideNavigation } from '@ruyyaan/reBiz/feature-side-navigation';
-import { AppLayout } from '../components/AppLayout';
+import { AppLayout } from '@ruyyaan/reBiz/ui';
 
 import Loading from './loading';
 

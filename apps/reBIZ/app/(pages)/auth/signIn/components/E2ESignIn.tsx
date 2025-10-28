@@ -5,7 +5,7 @@ import { TextField } from '@mui/material';
 import { signIn } from 'next-auth/react';
 
 import { Buttons, Layout } from '@ruyyaan/shared/ui';
-// import { isE2EEnabled } from '@ruyyaan/reBiz/util-access';
+import { isE2EEnabled } from '@ruyyaan/reBiz/util-access';
 
 export const E2ESignIn = () => {
   const { register, handleSubmit } = useForm<{

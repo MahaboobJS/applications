@@ -18,6 +18,9 @@
   "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx"],
   "references": [
     {
+      "path": "../util-access/tsconfig.lib.json"
+    },
+    {
       "path": "../data-access-zeebe/tsconfig.lib.json"
     },
     {
@@ -28,6 +31,9 @@
     },
     {
       "path": "../ui/tsconfig.lib.json"
+    },
+    {
+      "path": "../../shared/util-ui/tsconfig.lib.json"
     },
     {
       "path": "../util-env/tsconfig.lib.json"

@@ -10,6 +10,9 @@
   "include": [],
   "references": [
     {
+      "path": "../util-access"
+    },
+    {
       "path": "../data-access-zeebe"
     },
     {
@@ -20,6 +23,9 @@
     },
     {
       "path": "../ui"
+    },
+    {
+      "path": "../../shared/util-ui"
     },
     {
       "path": "../util-env"

@@ -10,6 +10,9 @@
   "include": [],
   "references": [
     {
+      "path": "../../shared/util-ui"
+    },
+    {
       "path": "../../shared/ui-loader"
     },
     {

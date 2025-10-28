@@ -65,7 +65,7 @@ export function LoginPageForStories(params: ReadonlyURLSearchParams) {
         >
           <Image
             priority={true}
-            src={logos.logoRuyyaanWhite.src}
+            src={logos.logoSignIn.src}
             alt={'Company logo'}
             width={160}
             height={70}

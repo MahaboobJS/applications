@@ -5,6 +5,9 @@
       "path": "../../libs/reBiz/util-access"
     },
     {
+      "path": "../../libs/reBiz/util-user"
+    },
+    {
       "path": "../../libs/reBiz/data-access-api"
     },
     {
@@ -12,15 +15,6 @@
     },
     {
       "path": "../../libs/shared/ui"
-    },
-    {
-      "path": "../../libs/shared/ui-icons"
-    },
-    {
-      "path": "../../libs/shared/ui-loader"
-    },
-    {
-      "path": "../../libs/shared/util-ui"
     }
   ],
   "compilerOptions": {
