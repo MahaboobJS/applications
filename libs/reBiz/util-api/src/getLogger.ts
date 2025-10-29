@@ -1,6 +1,6 @@
 import log, { type LogLevelDesc, type Logger } from 'loglevel';
 
-import { env } from '@ruyyaan/reBiz/util-env';
+import { env } from '@ruyyaan/rebiz/util-env';
 
 /**
   TRACE: 0;

@@ -9,7 +9,7 @@ import styled from 'styled-components';
 
 import { Layout, BorderLinearProgress } from '@ruyyaan/shared/ui';
 import { backgrounds, logos } from '@ruyyaan/shared/ui-assets/images';
-import { TextLarge, Loading } from '@ruyyaan/reBiz/ui';
+import { TextLarge, Loading } from '@ruyyaan/rebiz/ui';
 
 import { ErrorBox } from './components/ErrorBox';
 import { SignInOptions } from './components/SignInOptions';

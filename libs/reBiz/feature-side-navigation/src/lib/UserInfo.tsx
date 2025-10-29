@@ -3,8 +3,8 @@ import * as React from 'react';
 import { Button, useTheme } from '@mui/material';
 
 import { Layout } from '@ruyyaan/shared/ui';
-import { TextMedium, Avatar } from '@ruyyaan/reBiz/ui';
-import { useUser } from '@ruyyaan/reBiz/util-user';
+import { TextMedium, Avatar } from '@ruyyaan/rebiz/ui';
+import { useUser } from '@ruyyaan/rebiz/util-user';
 
 import { NavigationRoutes } from './types';
 import { UserInfoMenu } from './UserInfoMenu';

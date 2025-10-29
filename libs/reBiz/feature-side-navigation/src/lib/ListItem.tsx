@@ -9,7 +9,7 @@ import Link from 'next/link';
 
 import { Icon, IconsList } from '@ruyyaan/shared/ui-icons';
 import { withSx } from '@ruyyaan/shared/util-ui';
-import { TextMedium } from '@ruyyaan/reBiz/ui';
+import { TextMedium } from '@ruyyaan/rebiz/ui';
 
 type ListItemPropsType = {
   text: string;

@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { redirect } from "next/navigation";
 import { useSession } from "next-auth/react";
 
-import { useGetAccessQuery } from "@ruyyaan/reBiz/data-access-api";
+import { useGetAccessQuery } from "@ruyyaan/rebiz/data-access-api";
 
 import Loading from "../../../loading";
 

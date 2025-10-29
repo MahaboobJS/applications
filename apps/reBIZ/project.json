@@ -1,21 +1,21 @@
 {
-  "name": "reBiz",
+  "name": "rebiz",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/reBiz/src",
-  "tags": ["type:app", "scope:reBiz"],
+  "sourceRoot": "apps/rebiz/src",
+  "tags": ["type:app", "scope:rebiz"],
   "targets": {
     "build": {
       "executor": "@nx/next:build",
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/apps/reBiz"
+        "outputPath": "dist/apps/rebiz"
       },
       "configurations": {
         "development": {
-          "outputPath": "apps/reBiz"
+          "outputPath": "apps/rebiz"
         },
         "production": {}
       }
@@ -24,16 +24,16 @@
       "executor": "@nx/next:server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "reBiz:build",
+        "buildTarget": "rebiz:build",
         "dev": true
       },
       "configurations": {
         "development": {
-          "buildTarget": "reBiz:build:development",
+          "buildTarget": "rebiz:build:development",
           "dev": true
         },
         "production": {
-          "buildTarget": "reBiz:build:production",
+          "buildTarget": "rebiz:build:production",
           "dev": false
         }
       }
@@ -41,14 +41,14 @@
     "export": {
       "executor": "@nx/next:export",
       "options": {
-        "buildTarget": "reBiz:build:production"
+        "buildTarget": "rebiz:build:production"
       }
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/reBiz/jest.config.ts",
+        "jestConfig": "apps/rebiz/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -62,7 +62,7 @@
       "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/reBiz/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/rebiz/**/*.{ts,tsx,js,jsx}"]
       }
     }
   }

@@ -10,7 +10,7 @@
   "include": [],
   "references": [
     {
-      "path": "./apps/reBiz"
+      "path": "./apps/rebiz"
     },
     {
       "path": "./libs/shared/ui"
@@ -22,31 +22,31 @@
       "path": "./libs/shared/util-errors"
     },
     {
-      "path": "./libs/reBiz/feature-side-navigation"
+      "path": "./libs/rebiz/feature-side-navigation"
     },
     {
-      "path": "./libs/reBiz/ui"
+      "path": "./libs/rebiz/ui"
     },
     {
-      "path": "./libs/reBiz/util-api"
+      "path": "./libs/rebiz/util-api"
     },
     {
-      "path": "./libs/reBiz/util-env"
+      "path": "./libs/rebiz/util-env"
     },
     {
-      "path": "./libs/reBiz/data-access-api"
+      "path": "./libs/rebiz/data-access-api"
     },
     {
-      "path": "./libs/reBiz/data-access-zeebe"
+      "path": "./libs/rebiz/data-access-zeebe"
     },
     {
-      "path": "./libs/reBiz/util-access"
+      "path": "./libs/rebiz/util-access"
     },
     {
       "path": "./libs/shared/ui-loader"
     },
     {
-      "path": "./libs/reBiz/util-user"
+      "path": "./libs/rebiz/util-user"
     },
     {
       "path": "./libs/shared/feature-web-vitals"

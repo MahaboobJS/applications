@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { Layout } from '@ruyyaan/shared/ui';
 import { logos } from '@ruyyaan/shared/ui-assets/images';
 import { Icon, IconsList } from '@ruyyaan/shared/ui-icons';
-import { env } from '@ruyyaan/reBiz/util-env';
+import { env } from '@ruyyaan/rebiz/util-env';
 
 import { SideNavigationToolbar } from './elements';
 

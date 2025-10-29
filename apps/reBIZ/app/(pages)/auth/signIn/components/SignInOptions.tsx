@@ -2,7 +2,7 @@
 import * as React from 'react';
 
 import { Layout } from '@ruyyaan/shared/ui';
-// import { isE2EEnabled } from '@ruyyaan/reBiz/util-access';
+// import { isE2EEnabled } from '@ruyyaan/rebiz/util-access';
 
 import { E2ESignIn } from './E2ESignIn';
 import { SignIn } from './SignIn';

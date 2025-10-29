@@ -6,7 +6,7 @@ import Skeleton from '@mui/material/Skeleton';
 import { usePathname } from 'next/navigation';
 
 import { Layout } from '@ruyyaan/shared/ui';
-import { useGetAccessQuery } from '@ruyyaan/reBiz/data-access-api';
+import { useGetAccessQuery } from '@ruyyaan/rebiz/data-access-api';
 
 import { sideNavigationRoutes, userInfoRoutes } from '../tabs';
 

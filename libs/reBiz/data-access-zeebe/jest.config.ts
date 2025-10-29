@@ -7,6 +7,6 @@ export default {
     '^.+\\.[tj]s$': ['ts-jest', { tsconfig: '<rootDir>/tsconfig.spec.json' }],
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../../coverage/libs/reBiz/data-access-zeebe',
+  coverageDirectory: '../../../coverage/libs/rebiz/data-access-zeebe',
 };
 

@@ -1,5 +1,5 @@
 'use client';
-import { ErrorPage } from '@ruyyaan/reBiz/ui';
+import { ErrorPage } from '@ruyyaan/rebiz/ui';
 
 export default function GlobalError({
   error,

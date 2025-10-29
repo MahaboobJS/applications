@@ -1,6 +1,6 @@
-# Contributing to reBiz
+# Contributing to rebiz
 
-Welcome to the reBiz project! This guide will help you get started with
+Welcome to the rebiz project! This guide will help you get started with
 contributing to our codebase.
 
 ## 🎯 Getting Started
@@ -410,5 +410,5 @@ We follow [SemVer](https://semver.org/):
 
 ---
 
-Thank you for contributing to reBiz! Every contribution, no matter how small,
+Thank you for contributing to rebiz! Every contribution, no matter how small,
 makes a difference. 🎉

@@ -1,11 +1,11 @@
 /* eslint-disable */
 export default {
-  displayName: 'reBiz-util-user',
+  displayName: 'rebiz-util-user',
   preset: '../../../jest.preset.js',
   transform: {
     '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nx/react/plugins/jest',
     '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nx/react/babel'] }],
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../../coverage/libs/reBiz/ui',
+  coverageDirectory: '../../../coverage/libs/rebiz/ui',
 };

@@ -4,7 +4,7 @@ import type { StoryObj, Meta } from '@storybook/react';
 import { fn } from '@storybook/test';
 
 import { Buttons } from '@ruyyaan/shared/ui';
-import { themes } from '@ruyyaan/reBiz/ui-theme';
+import { themes } from '@ruyyaan/rebiz/ui-theme';
 
 const PrimaryButton = Buttons.PrimaryButton;
 

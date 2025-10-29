@@ -1,4 +1,4 @@
-# reBiz-ui
+# rebiz-ui
 
 This library will be split into more specific components
 

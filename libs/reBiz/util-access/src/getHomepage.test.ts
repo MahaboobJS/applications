@@ -1,7 +1,7 @@
 // Define AccessAction as a string type for MongoDB
 type AccessAction = string;
 
-import { mockGenerateRoles } from '@ruyyaan/reBiz/util-test';
+import { mockGenerateRoles } from '@ruyyaan/rebiz/util-test';
 
 import { getHomepage } from './getHomepage';
 import { routes } from './getRoutes';

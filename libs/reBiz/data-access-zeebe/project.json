@@ -2,31 +2,31 @@
   "name": "data-access-zeebe",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
-  "sourceRoot": "libs/reBiz/data-access-zeebe/src",
+  "sourceRoot": "libs/rebiz/data-access-zeebe/src",
   "prefix": "lib",
   "targets": {
     "build": {
       "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/libs/reBiz/data-access-zeebe",
-        "main": "libs/reBiz/data-access-zeebe/src/index.ts",
-        "tsConfig": "libs/reBiz/data-access-zeebe/tsconfig.lib.json",
-        "assets": ["libs/reBiz/data-access-zeebe/*.md"]
+        "outputPath": "dist/libs/rebiz/data-access-zeebe",
+        "main": "libs/rebiz/data-access-zeebe/src/index.ts",
+        "tsConfig": "libs/rebiz/data-access-zeebe/tsconfig.lib.json",
+        "assets": ["libs/rebiz/data-access-zeebe/*.md"]
       }
     },
     "lint": {
       "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/reBiz/data-access-zeebe/**/*.ts"]
+        "lintFilePatterns": ["libs/rebiz/data-access-zeebe/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/reBiz/data-access-zeebe/jest.config.ts",
+        "jestConfig": "libs/rebiz/data-access-zeebe/jest.config.ts",
         "passWithNoTests": true
       }
     }

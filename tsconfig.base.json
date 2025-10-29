@@ -19,17 +19,17 @@
     "customConditions": ["development"],
     "baseUrl": ".",
     "paths": {
-      "@ruyyaan/reBiz/data-access-api": ["./libs/reBiz/data-access-api/src/index.ts"],
-      "@ruyyaan/reBiz/data-access-zeebe": ["./libs/reBiz/data-access-zeebe/src/index.ts"],
-      "@ruyyaan/reBiz/feature-side-navigation": [
-        "./libs/reBiz/feature-side-navigation/src/index.ts"
+      "@ruyyaan/rebiz/data-access-api": ["./libs/rebiz/data-access-api/src/index.ts"],
+      "@ruyyaan/rebiz/data-access-zeebe": ["./libs/rebiz/data-access-zeebe/src/index.ts"],
+      "@ruyyaan/rebiz/feature-side-navigation": [
+        "./libs/rebiz/feature-side-navigation/src/index.ts"
       ],
-      "@ruyyaan/reBiz/ui": ["./libs/reBiz/ui/src/index.ts"],
-      "@ruyyaan/reBiz/util-access": ["./libs/reBiz/util-access/src/index.ts"],
-      "@ruyyaan/reBiz/util-api": ["./libs/reBiz/util-api/src/index.ts"],
-      "@ruyyaan/reBiz/util-env": ["./libs/reBiz/util-env/src/index.ts"],
-      "@ruyyaan/reBiz/util-test": ["./libs/reBiz/util-test/src/index.ts"],
-      "@ruyyaan/reBiz/util-user": ["./libs/reBiz/util-user/src/index.ts"],
+      "@ruyyaan/rebiz/ui": ["./libs/rebiz/ui/src/index.ts"],
+      "@ruyyaan/rebiz/util-access": ["./libs/rebiz/util-access/src/index.ts"],
+      "@ruyyaan/rebiz/util-api": ["./libs/rebiz/util-api/src/index.ts"],
+      "@ruyyaan/rebiz/util-env": ["./libs/rebiz/util-env/src/index.ts"],
+      "@ruyyaan/rebiz/util-test": ["./libs/rebiz/util-test/src/index.ts"],
+      "@ruyyaan/rebiz/util-user": ["./libs/rebiz/util-user/src/index.ts"],
       "@ruyyaan/shared/feature-web-vitals": ["./libs/shared/feature-web-vitals/src/index.ts"],
       "@ruyyaan/shared/ui": ["./libs/shared/ui/src/index.ts"],
       "@ruyyaan/shared/ui-assets/fonts": ["./libs/shared/ui-assets/fonts/index.ts"],

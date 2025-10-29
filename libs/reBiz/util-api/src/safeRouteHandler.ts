@@ -3,9 +3,9 @@ import { NextRequest, NextResponse } from 'next/server';
 // Removed zod import - using simple error handling
 
 import { CustomErrorType, HTTPErrors } from '@ruyyaan/shared/util-errors';
-import { AccessRequired } from '@ruyyaan/reBiz/util-access';
-import { reportError } from '@ruyyaan/reBiz/util-error';
-import { Session } from '@ruyyaan/reBiz/util-user';
+import { AccessRequired } from '@ruyyaan/rebiz/util-access';
+import { reportError } from '@ruyyaan/rebiz/util-error';
+import { Session } from '@ruyyaan/rebiz/util-user';
 
 import { generateApiError } from './generateApiError';
 // Removed handleZodErrors import - using simple error handling

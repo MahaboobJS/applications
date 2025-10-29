@@ -1,6 +1,6 @@
 import NextAuth from 'next-auth/next';
 
-import { authOptions } from '@ruyyaan/reBiz/util-user';
+import { authOptions } from '@ruyyaan/rebiz/util-user';
 
 const handler = NextAuth(authOptions);
 

@@ -8,10 +8,10 @@ import { signOut } from 'next-auth/react';
 
 import { Divider, Layout } from '@ruyyaan/shared/ui';
 import { Icon, IconsList } from '@ruyyaan/shared/ui-icons';
-import { usePermitRoles } from '@ruyyaan/reBiz/data-access-zeebe';
-import { TextRegular, Avatar } from '@ruyyaan/reBiz/ui';
-import { routes } from '@ruyyaan/reBiz/util-access';
-import { useUser } from '@ruyyaan/reBiz/util-user';
+import { usePermitRoles } from '@ruyyaan/rebiz/data-access-zeebe';
+import { TextRegular, Avatar } from '@ruyyaan/rebiz/ui';
+import { routes } from '@ruyyaan/rebiz/util-access';
+import { useUser } from '@ruyyaan/rebiz/util-user';
 
 import { NavigationRoute, NavigationRoutes } from './types';
 

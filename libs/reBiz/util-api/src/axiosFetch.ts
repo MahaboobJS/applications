@@ -2,7 +2,7 @@ import axios from 'axios';
 import type { AxiosRequestConfig } from 'axios';
 
 import { CustomErrorType } from '@ruyyaan/shared/util-errors';
-import { reportError } from '@ruyyaan/reBiz/util-error';
+import { reportError } from '@ruyyaan/rebiz/util-error';
 
 export type FetchDataOptions = {
   apiUrl: string;

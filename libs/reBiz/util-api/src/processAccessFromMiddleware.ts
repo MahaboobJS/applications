@@ -1,5 +1,5 @@
-import { canAccess } from '@ruyyaan/reBiz/util-access';
-import { getUserSession } from '@ruyyaan/reBiz/util-user';
+import { canAccess } from '@ruyyaan/rebiz/util-access';
+import { getUserSession } from '@ruyyaan/rebiz/util-user';
 
 import { Middleware } from './safeRouteHandler';
 

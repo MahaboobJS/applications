@@ -2,16 +2,16 @@
   "extends": "../../tsconfig.base.json",
   "references": [
     {
-      "path": "../../libs/reBiz/util-access"
+      "path": "../../libs/rebiz/util-access"
     },
     {
-      "path": "../../libs/reBiz/util-user"
+      "path": "../../libs/rebiz/util-user"
     },
     {
-      "path": "../../libs/reBiz/data-access-api"
+      "path": "../../libs/rebiz/data-access-api"
     },
     {
-      "path": "../../libs/reBiz/ui"
+      "path": "../../libs/rebiz/ui"
     },
     {
       "path": "../../libs/shared/ui"
@@ -33,11 +33,11 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@ruyyaan/reBiz/data-access-api": ["../../libs/reBiz/data-access-api/src/index.ts"],
-      "@ruyyaan/reBiz/ui": ["../../libs/reBiz/ui/src/index.ts"],
-      "@ruyyaan/reBiz/util-access": ["../../libs/reBiz/util-access/src/index.ts"],
-      "@ruyyaan/reBiz/util-user": ["../../libs/reBiz/util-user/src/index.ts"],
-      "@ruyyaan/reBiz/util-env": ["../../libs/reBiz/util-env/src/index.ts"],
+      "@ruyyaan/rebiz/data-access-api": ["../../libs/rebiz/data-access-api/src/index.ts"],
+      "@ruyyaan/rebiz/ui": ["../../libs/rebiz/ui/src/index.ts"],
+      "@ruyyaan/rebiz/util-access": ["../../libs/rebiz/util-access/src/index.ts"],
+      "@ruyyaan/rebiz/util-user": ["../../libs/rebiz/util-user/src/index.ts"],
+      "@ruyyaan/rebiz/util-env": ["../../libs/rebiz/util-env/src/index.ts"],
       "@ruyyaan/shared/ui": ["../../libs/shared/ui/src/index.ts"],
       "@ruyyaan/shared/ui-assets/images": ["../../libs/shared/ui-assets/images/index.ts"],
       "@ruyyaan/shared/ui-icons": ["../../libs/shared/ui-icons/src/index.ts"],
@@ -52,8 +52,8 @@
     "**/*.jsx",
     "**/*.ts",
     "**/*.tsx",
-    "../../apps/reBiz/.next/types/**/*.ts",
-    "../../dist/apps/reBiz/.next/types/**/*.ts",
+    "../../apps/rebiz/.next/types/**/*.ts",
+    "../../dist/apps/rebiz/.next/types/**/*.ts",
     ".next/types/**/*.ts"
   ],
   "exclude": [

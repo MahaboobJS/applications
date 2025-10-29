@@ -1,8 +1,8 @@
-# Development Guide for reBiz
+# Development Guide for rebiz
 
 ## 🎯 Quick Start for Freshers
 
-This guide will help you understand how to work on the reBiz project as a
+This guide will help you understand how to work on the rebiz project as a
 beginner developer.
 
 ## 📚 Learning Path

@@ -1,4 +1,4 @@
-// Test utilities for reBiz libraries
+// Test utilities for rebiz libraries
 export const mockGenerateRoles = (roles: string[]) => {
   return roles;
 };

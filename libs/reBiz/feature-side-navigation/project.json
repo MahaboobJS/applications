@@ -1,7 +1,7 @@
 {
-  "name": "reBiz-feature-side-navigation",
+  "name": "rebiz-feature-side-navigation",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/reBiz/feature-side-navigation/src",
+  "sourceRoot": "libs/rebiz/feature-side-navigation/src",
   "projectType": "library",
   "tags": [],
   "targets": {
@@ -12,7 +12,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/reBiz/feature-side-navigation/jest.config.ts"
+        "jestConfig": "libs/rebiz/feature-side-navigation/jest.config.ts"
       }
     }
   }

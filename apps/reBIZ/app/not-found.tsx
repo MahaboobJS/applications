@@ -2,7 +2,7 @@
 import Link from 'next/link';
 
 import { Layout } from '@ruyyaan/shared/ui';
-import { PageContainer, TextLarge, TextRegular } from '@ruyyaan/reBiz/ui';
+import { PageContainer, TextLarge, TextRegular } from '@ruyyaan/rebiz/ui';
 
 export default function NotFound() {
   return (

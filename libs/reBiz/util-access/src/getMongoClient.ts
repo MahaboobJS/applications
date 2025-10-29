@@ -5,7 +5,7 @@ declare global {
   var _mongoClientPromise: Promise<MongoClient> | undefined;
 }
 
-const uri = process.env.MONGODB_URI || 'mongodb://localhost:27017/reBiz';
+const uri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/rebiz';
 
 let client: MongoClient;
 let clientPromise: Promise<MongoClient>;

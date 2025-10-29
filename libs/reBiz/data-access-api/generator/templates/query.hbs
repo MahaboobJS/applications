@@ -5,8 +5,8 @@ import type { {{prismaCase domain}} } from '@prisma/client';
 {{/if}}
 import { useQuery } from '@tanstack/react-query';
 
-import { createUrlFromPattern } from '@ruyyaan/reBiz/util-access';
-import { APIReturnType, axiosFetch } from '@ruyyaan/reBiz/util-api';
+import { createUrlFromPattern } from '@ruyyaan/rebiz/util-access';
+import { APIReturnType, axiosFetch } from '@ruyyaan/rebiz/util-api';
 
 import { API_BASE } from '../../constants';
 import { {{endpoint.name}} as APIHandler{{#if endpoint.dynamicParams}}, EndpointParams{{/if}} } from '../api/{{endpoint.name}}';

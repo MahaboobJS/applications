@@ -1,5 +1,5 @@
 {
-  "extends": ["plugin:@nx/react", "../../../.eslintrc.reBiz.json"],
+  "extends": ["plugin:@nx/react", "../../../.eslintrc.rebiz.json"],
   "ignorePatterns": ["!**/*"],
   "overrides": [
     {

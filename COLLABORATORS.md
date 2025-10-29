@@ -1,6 +1,6 @@
 # Project Collaborators
 
-This document lists all the collaborators for the reBiz project.
+This document lists all the collaborators for the rebiz project.
 
 ## Project Team
 

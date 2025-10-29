@@ -1,4 +1,4 @@
-# reBiz - Business Intelligence Platform
+# rebiz - Business Intelligence Platform
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 
@@ -6,7 +6,7 @@
 
 ## 🚀 Project Overview
 
-reBiz is a modern business intelligence platform built with cutting-edge
+rebiz is a modern business intelligence platform built with cutting-edge
 technologies, designed to provide powerful analytics and data visualization
 capabilities for modern businesses.
 
@@ -26,7 +26,7 @@ capabilities for modern businesses.
 
 ### 🎯 What is this project?
 
-reBiz is a **Business Intelligence Platform** that helps companies analyze their
+rebiz is a **Business Intelligence Platform** that helps companies analyze their
 data and make better decisions. Think of it like a dashboard that shows charts,
 graphs, and reports about business performance.
 
@@ -110,7 +110,7 @@ npm run dev
 
 Open your web browser and go to: `http://localhost:3000`
 
-🎉 **Congratulations!** If you see the reBiz application, you've successfully
+🎉 **Congratulations!** If you see the rebiz application, you've successfully
 set up the project!
 
 ---
@@ -120,7 +120,7 @@ set up the project!
 ```
 applications/                    # Root folder
 ├── apps/                       # Contains all applications
-│   └── reBiz/                 # Main reBiz application
+│   └── rebiz/                 # Main rebiz application
 │       ├── src/               # Source code
 │       │   ├── app/           # Next.js pages and layouts
 │       │   │   ├── page.tsx   # Home page
@@ -140,9 +140,9 @@ applications/                    # Root folder
 ### 🔍 Key Files Explained
 
 - **`package.json`**: Lists all the libraries we use and scripts we can run
-- **`apps/reBiz/src/app/page.tsx`**: The main home page
-- **`apps/reBiz/src/app/layout.tsx`**: The common layout for all pages
-- **`apps/reBiz/src/components/`**: Folder for reusable components
+- **`apps/rebiz/src/app/page.tsx`**: The main home page
+- **`apps/rebiz/src/app/layout.tsx`**: The common layout for all pages
+- **`apps/rebiz/src/components/`**: Folder for reusable components
 - **`node_modules/`**: Where installed packages are stored (don't modify this)
 
 ---
@@ -236,7 +236,7 @@ npx nx reset                  # Clear cache if something breaks
 
 ```bash
 # Navigate to the app directory
-cd apps/reBiz/src/app
+cd apps/rebiz/src/app
 
 # Create a new folder and page file
 mkdir my-new-page
@@ -247,7 +247,7 @@ touch my-new-page/page.tsx
 
 ```bash
 # Navigate to components directory
-cd apps/reBiz/src/components
+cd apps/rebiz/src/components
 
 # Create a new component file
 touch MyNewComponent.tsx
@@ -486,7 +486,7 @@ git push origin feature/my-new-feature
 
 ---
 
-**Built with ❤️ by the reBiz Team**
+**Built with ❤️ by the rebiz Team**
 
 _Happy Coding! Remember, everyone was a beginner once. Don't hesitate to ask
 questions and learn from each other._ 🚀

@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { QueryObserverBaseResult, UseQueryResult } from '@tanstack/react-query';
 
-import { Loading, TextRegular } from '@ruyyaan/reBiz/ui';
+import { Loading, TextRegular } from '@ruyyaan/rebiz/ui';
 
 import { ErrorResponse, SuccessResponse } from './types';
 

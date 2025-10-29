@@ -1,5 +1,5 @@
 import { IconsList } from '@ruyyaan/shared/ui-icons';
-import { routes } from '@ruyyaan/reBiz/util-access';
+import { routes } from '@ruyyaan/rebiz/util-access';
 
 import { NavigationRoutes } from './lib/types';
 

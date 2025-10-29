@@ -39,7 +39,7 @@ export const routes: Record<string, Route> = {
   DASHBOARD: {
     url: '/dashboard',
   },
- 
+
   PAGE_ERROR: {
     url: '/error',
     public: true,
