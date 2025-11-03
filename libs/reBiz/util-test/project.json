@@ -1,0 +1,22 @@
+{
+  "name": "rebiz-util-test",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/rebiz/util-test/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/rebiz/util-test",
+        "main": "libs/rebiz/util-test/src/index.ts",
+        "tsConfig": "libs/rebiz/util-test/tsconfig.lib.json",
+        "assets": ["libs/rebiz/util-test/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  },
+  "tags": ["scope:rebiz", "type:util"]
+}

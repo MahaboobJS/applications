@@ -1,0 +1,17 @@
+{{> GeneratedFileHeader }}
+
+{{#if hasDynamicKeys}}
+import type { {{prismaCase domain}} } from '@prisma/client';
+{{/if}}
+
+const baseKey = '{{ domain }}';
+
+export const {{ domain }}Keys = {
+  {{#each keys}}
+  {{#equals @key "all"}}
+  all: () => [baseKey],
+  {{else}}
+  {{@key}}: ({{{arguments this.dynamicParts ../domain this.modelReplacements}}}) => [baseKey, '{{@key}}'{{{prefixedList this.extendedKeyPath}}}{{{prefixedList this.dynamicParts false}}}],
+  {{/equals}}
+  {{/each}}
+};

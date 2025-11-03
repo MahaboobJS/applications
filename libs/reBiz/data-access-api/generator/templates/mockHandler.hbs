@@ -1,0 +1,27 @@
+{{> GeneratedFileHeader }}
+
+{{#if endpoint.dynamicParams}}
+import type { {{prismaCase domain}} } from '@prisma/client';
+{{/if}}
+import { http } from 'msw';
+import { NextRequest } from 'next/server';
+
+import { MSWRequest } from '@ruyyaan/shared/util-test';
+
+import { API_BASE } from '../../constants';
+import { {{endpoint.name}} } from '../api/{{endpoint.name}}';
+
+export const mock{{pascalCase endpoint.name}} = ({{{arguments endpoint.dynamicParams domain endpoint.modelReplacements}}}): MSWRequest => {
+  // this is how we should do this, but currently there is a jest ts error
+  // const url = createUrlFromPattern(routes.getUserOrgs, { id });
+  const url = `${API_BASE}{{endpoint.urlRoute}}`{{{urlReplace endpoint.dynamicParams}}};
+
+  return http.{{lowercase endpoint.verb}}(url, async ({ request }) => {
+    const response = await {{endpoint.name}}(request as NextRequest,
+      {{#if endpoint.dynamicParams}}
+      { params: {{params endpoint.dynamicParams}} },
+      {{/if}}
+    );
+    return response;
+  });
+};

@@ -1,0 +1,22 @@
+GET http://localhost:4200/api/v1/users
+Content-Type: application/json
+###
+GET http://localhost:4200/api/v1/users/byOrg
+Content-Type: application/json
+###
+GET http://localhost:4200/api/v1/users/1
+Content-Type: application/json
+###
+POST http://localhost:4200/api/internal/logs/createLog
+Content-Type: application/json
+
+{
+
+}
+###
+POST http://localhost:4200/api/internal/logs
+Content-Type: application/json
+###
+GET http://localhost:4200/api/internal/users/clye6ozgd0000isiw0at2dvkk/workflowRoles
+Content-Type: application/json
+###

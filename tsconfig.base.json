@@ -19,13 +19,27 @@
     "customConditions": ["development"],
     "baseUrl": ".",
     "paths": {
-      "@ruyyaan/reBiz/feature-side-navigation": [
-        "./libs/wiz-bi/feature-side-navigation/src/index.ts"
+      "@ruyyaan/rebiz/data-access-api": ["./libs/rebiz/data-access-api/src/index.ts"],
+      "@ruyyaan/rebiz/data-access-zeebe": ["./libs/rebiz/data-access-zeebe/src/index.ts"],
+      "@ruyyaan/rebiz/feature-side-navigation": [
+        "./libs/rebiz/feature-side-navigation/src/index.ts"
       ],
-      "@ruyyaan/reBiz/ui": ["./libs/wiz-bi/ui/src/index.ts"],
-      "@ruyyaan/reBiz/ui-theme": ["./libs/wiz-bi/ui-theme/src/index.ts"],
-      "@ruyyaan/shared/providers": ["./libs/shared/providers/src/index.ts"],
-      "@ruyyaan/shared/ui-mui-theme": ["./libs/shared/ui-mui-theme/src/index.ts"]
+      "@ruyyaan/rebiz/ui": ["./libs/rebiz/ui/src/index.ts"],
+      "@ruyyaan/rebiz/util-access": ["./libs/rebiz/util-access/src/index.ts"],
+      "@ruyyaan/rebiz/util-api": ["./libs/rebiz/util-api/src/index.ts"],
+      "@ruyyaan/rebiz/util-env": ["./libs/rebiz/util-env/src/index.ts"],
+      "@ruyyaan/rebiz/util-test": ["./libs/rebiz/util-test/src/index.ts"],
+      "@ruyyaan/rebiz/util-user": ["./libs/rebiz/util-user/src/index.ts"],
+      "@ruyyaan/shared/feature-web-vitals": ["./libs/shared/feature-web-vitals/src/index.ts"],
+      "@ruyyaan/shared/ui": ["./libs/shared/ui/src/index.ts"],
+      "@ruyyaan/shared/ui-assets/fonts": ["./libs/shared/ui-assets/fonts/index.ts"],
+      "@ruyyaan/shared/ui-assets/images": ["./libs/shared/ui-assets/images/index.ts"],
+      "@ruyyaan/shared/ui-icons": ["./libs/shared/ui-icons/src/index.ts"],
+      "@ruyyaan/shared/ui-loader": ["./libs/shared/ui-loader/src/index.ts"],
+      "@ruyyaan/shared/ui/*": ["./libs/shared/ui/src/*"],
+      "@ruyyaan/shared/util-errors": ["./libs/shared/util-errors/src/index.ts"],
+      "@ruyyaan/shared/util-test": ["./libs/shared/util-test/src/index.ts"],
+      "@ruyyaan/shared/util-ui": ["./libs/shared/util-ui/src/index.ts"]
     }
   }
 }

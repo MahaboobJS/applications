@@ -1,6 +1,23 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-# Commit message validation disabled
-echo "Commit message validation disabled"
-exit 0
+echo "📝 Validating commit message format..."
+
+# Run commitlint to validate conventional commit format
+npx --no -- commitlint --edit "$1"
+
+# Check if commitlint passed
+if [ $? -ne 0 ]; then
+  echo "❌ Commit message validation failed."
+  echo "Please follow the conventional commit format:"
+  echo "  feat: add new feature"
+  echo "  fix: fix bug"
+  echo "  docs: update documentation"
+  echo "  style: formatting changes"
+  echo "  refactor: code refactoring"
+  echo "  test: add tests"
+  echo "  chore: maintenance tasks"
+  exit 1
+fi
+
+echo "✅ Commit message is valid!"

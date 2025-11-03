@@ -1,0 +1,23 @@
+{
+  "extends": ["plugin:@nx/react", "../../../.eslintrc.rebiz.json"],
+  "ignorePatterns": ["!**/*"],
+  "settings": {
+    "next": {
+      "rootDir": "libs/rebiz/ui/src/lib"
+    }
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {}
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {}
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "rules": {}
+    }
+  ]
+}

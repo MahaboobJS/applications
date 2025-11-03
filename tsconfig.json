@@ -10,22 +10,49 @@
   "include": [],
   "references": [
     {
-      "path": "./apps/reBiz"
+      "path": "./apps/rebiz"
     },
     {
-      "path": "./apps/reBIZ"
+      "path": "./libs/shared/ui"
     },
     {
-      "path": "./apps/student-portal-backend"
+      "path": "./libs/shared/ui-icons"
     },
     {
-      "path": "./apps/student-portal-ui"
+      "path": "./libs/shared/util-errors"
     },
     {
-      "path": "./apps/auth-frontend"
+      "path": "./libs/rebiz/feature-side-navigation"
     },
     {
-      "path": "./apps/auth-backend"
+      "path": "./libs/rebiz/ui"
+    },
+    {
+      "path": "./libs/rebiz/util-api"
+    },
+    {
+      "path": "./libs/rebiz/util-env"
+    },
+    {
+      "path": "./libs/rebiz/data-access-api"
+    },
+    {
+      "path": "./libs/rebiz/data-access-zeebe"
+    },
+    {
+      "path": "./libs/rebiz/util-access"
+    },
+    {
+      "path": "./libs/shared/ui-loader"
+    },
+    {
+      "path": "./libs/rebiz/util-user"
+    },
+    {
+      "path": "./libs/shared/feature-web-vitals"
+    },
+    {
+      "path": "./libs/shared/util-ui"
     }
   ]
 }

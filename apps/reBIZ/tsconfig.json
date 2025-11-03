@@ -1,11 +1,25 @@
 {
   "extends": "../../tsconfig.base.json",
+  "references": [
+    {
+      "path": "../../libs/rebiz/util-access"
+    },
+    {
+      "path": "../../libs/rebiz/util-user"
+    },
+    {
+      "path": "../../libs/rebiz/data-access-api"
+    },
+    {
+      "path": "../../libs/rebiz/ui"
+    },
+    {
+      "path": "../../libs/shared/ui"
+    }
+  ],
   "compilerOptions": {
     "composite": true,
-    "types": [
-      "jest",
-      "node"
-    ],
+    "types": ["jest", "node"],
     "allowJs": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -18,9 +32,19 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["./src/*"],
+      "@ruyyaan/rebiz/data-access-api": ["../../libs/rebiz/data-access-api/src/index.ts"],
+      "@ruyyaan/rebiz/util-api": ["../../libs/rebiz/util-api/src/index.ts"],
+      "@ruyyaan/rebiz/ui": ["../../libs/rebiz/ui/src/index.ts"],
+      "@ruyyaan/rebiz/util-access": ["../../libs/rebiz/util-access/src/index.ts"],
+      "@ruyyaan/rebiz/util-user": ["../../libs/rebiz/util-user/src/index.ts"],
+      "@ruyyaan/rebiz/util-env": ["../../libs/rebiz/util-env/src/index.ts"],
+      "@ruyyaan/shared/ui": ["../../libs/shared/ui/src/index.ts"],
+      "@ruyyaan/shared/util-errors": ["../../libs/shared/util-errors/src/index.ts"],
+      "@ruyyaan/shared/ui-assets/images": ["../../libs/shared/ui-assets/images/index.ts"],
+      "@ruyyaan/shared/ui-icons": ["../../libs/shared/ui-icons/src/index.ts"],
+      "@ruyyaan/shared/ui-loader": ["../../libs/shared/ui-loader/src/index.ts"],
+      "@ruyyaan/shared/util-ui": ["../../libs/shared/util-ui/src/index.ts"]
     },
     "noEmit": true,
     "resolveJsonModule": true
@@ -30,8 +54,8 @@
     "**/*.jsx",
     "**/*.ts",
     "**/*.tsx",
-    "../../apps/reBiz/.next/types/**/*.ts",
-    "../../dist/apps/reBiz/.next/types/**/*.ts",
+    "../../apps/rebiz/.next/types/**/*.ts",
+    "../../dist/apps/rebiz/.next/types/**/*.ts",
     ".next/types/**/*.ts"
   ],
   "exclude": [
