@@ -1,13 +1,16 @@
-import { Route, Routes } from 'react-router-dom';
 
 import { faker } from '@faker-js/faker';
-import { Box } from '@mui/material';
-import type { Meta, StoryObj } from '@storybook/react';
 import { withRouter } from 'storybook-addon-react-router-v6';
 
-import { FlexBox } from '../FlexBox';
+import { Route, Routes } from 'react-router-dom';
 
+import { Box } from '@mui/material';
+
+import { FlexBox } from '../FlexBox';
 import { Main } from './Main';
+
+import type { Meta, StoryObj } from '@storybook/react';
+
 const meta: Meta<typeof Main> = {
   component: Main,
   title: 'Shared / Layout / Main',

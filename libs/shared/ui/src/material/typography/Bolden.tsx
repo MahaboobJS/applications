@@ -24,6 +24,6 @@ import { Title } from './Title';
 
 // use something more simple for now, as this is not heavily used, and causing type issues
 export const Bold1: React.FC<{ text: string }> = ({ text }) => {
-  // eslint-disable-next-line react/jsx-pascal-case
+   
   return <Title.Medium text={text} sx={{ fontWeight: '900' }} />;
 };

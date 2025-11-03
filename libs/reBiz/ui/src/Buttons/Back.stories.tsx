@@ -1,7 +1,9 @@
 import { action } from '@storybook/addon-actions';
-import type { StoryObj, Meta } from '@storybook/react';
 
 import { BackButton } from './Back';
+
+import type { StoryObj, Meta } from '@storybook/react';
+
 
 const meta: Meta<typeof BackButton> = {
   component: BackButton,

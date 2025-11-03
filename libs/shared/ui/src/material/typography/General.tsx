@@ -1,9 +1,11 @@
 import * as React from 'react';
 
-import type { TypographyProps } from '@mui/material';
 import TypographyMaterial from '@mui/material/Typography';
+import type { TypographyProps } from '@mui/material';
 
 import { useTheme } from '../../providers/StyleProvider';
+
+
 
 const useColor = ({ muted }: { muted?: boolean }) => {
   const theme = useTheme();

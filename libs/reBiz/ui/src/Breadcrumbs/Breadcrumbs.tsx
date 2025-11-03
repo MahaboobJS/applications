@@ -1,8 +1,10 @@
 'use client';
+
 import React from 'react';
 
-import { type SxProps } from '@mui/material';
 import { usePathname } from 'next/navigation';
+
+import { type SxProps } from '@mui/material';
 
 import { BreadcrumbItem, Breadcrumbs as CntxtBreadcrumbs } from '@ruyyaan/shared/ui';
 

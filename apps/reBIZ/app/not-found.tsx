@@ -1,8 +1,8 @@
 'use client';
 import Link from 'next/link';
 
-import { Layout } from '@ruyyaan/shared/ui';
 import { PageContainer, TextLarge, TextRegular } from '@ruyyaan/rebiz/ui';
+import { Layout } from '@ruyyaan/shared/ui';
 
 export default function NotFound() {
   return (

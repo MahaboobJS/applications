@@ -1,6 +1,7 @@
+import { BorderLinearProgress } from './BorderLinearProgress';
+
 import type { StoryObj, Meta } from '@storybook/react';
 
-import { BorderLinearProgress } from './BorderLinearProgress';
 const meta: Meta<typeof BorderLinearProgress> = {
   component: BorderLinearProgress,
   title: 'Shared / Progress / BorderLinearProgress',

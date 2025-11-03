@@ -1,9 +1,9 @@
-import type { StoryObj, Meta } from '@storybook/react';
 
 import { Layout } from '../layout';
 import { Typography } from '../typography';
-
 import { Modal } from './Modal';
+
+import type { StoryObj, Meta } from '@storybook/react';
 
 const title = 'Modal Title';
 const open = true;

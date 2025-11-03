@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { ErrorBoundary as InternalErrorBoundary } from 'react-error-boundary';
 
 import { ErrorFallback } from './ErrorFallback';

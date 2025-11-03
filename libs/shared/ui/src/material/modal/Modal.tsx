@@ -1,13 +1,15 @@
+
 import React from 'react';
 
 import CloseIcon from '@mui/icons-material/Close';
 import { Box } from '@mui/material';
-import type { SxProps } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import BaseModal from '@mui/material/Modal';
+import type { SxProps } from '@mui/material';
 
 import { colors } from '../../styles/colors';
 import { Layout } from '../layout';
+
 
 export type ModalProps = {
   open: boolean;

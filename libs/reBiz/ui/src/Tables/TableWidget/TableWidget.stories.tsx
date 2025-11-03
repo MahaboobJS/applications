@@ -1,10 +1,10 @@
-import type { Meta } from '@storybook/react';
 import { createMRTColumnHelper } from 'material-react-table';
 
+import { TableWidget } from './TableWidget';
 import { StyledTableCell } from '../styles/getStyledTableCell';
 import { StyledTableHeader } from '../styles/StyledTableHeader';
 
-import { TableWidget } from './TableWidget';
+import type { Meta } from '@storybook/react';
 
 const Story: Meta<typeof TableWidget> = {
   component: TableWidget,

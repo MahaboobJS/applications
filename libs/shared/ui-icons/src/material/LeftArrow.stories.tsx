@@ -1,6 +1,7 @@
+import { LeftArrow } from './LeftArrow';
+
 import type { StoryObj, Meta } from '@storybook/react';
 
-import { LeftArrow } from './LeftArrow';
 
 const meta: Meta<typeof LeftArrow> = {
   component: LeftArrow,

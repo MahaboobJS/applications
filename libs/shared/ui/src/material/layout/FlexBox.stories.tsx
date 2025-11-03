@@ -1,6 +1,7 @@
+import { FlexBox } from './FlexBox';
+
 import type { StoryObj, Meta } from '@storybook/react';
 
-import { FlexBox } from './FlexBox';
 
 const meta: Meta<typeof FlexBox> = {
   component: FlexBox,

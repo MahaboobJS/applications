@@ -1,13 +1,15 @@
-import { Route, Routes } from 'react-router-dom';
 
 import { faker } from '@faker-js/faker';
-import { Box } from '@mui/material';
-import type { StoryObj, Meta } from '@storybook/react';
 import { withRouter } from 'storybook-addon-react-router-v6';
 
-import { FlexBox } from '../FlexBox';
+import { Route, Routes } from 'react-router-dom';
 
+import { Box } from '@mui/material';
+
+import { FlexBox } from '../FlexBox';
 import { SmallLeftLargeRight } from './SmallLeftLargeRight';
+
+import type { StoryObj, Meta } from '@storybook/react';
 
 const meta: Meta<typeof SmallLeftLargeRight> = {
   component: SmallLeftLargeRight,

@@ -1,13 +1,15 @@
+
 import React from 'react';
 
 import CloseIcon from '@mui/icons-material/Close';
 import { Box, Paper } from '@mui/material';
-import type { SxProps } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import BasePopover from '@mui/material/Popover';
+import type { SxProps } from '@mui/material';
 
 import { colors } from '../../styles/colors';
 import { Layout } from '../layout';
+
 
 export type PopoverProps = {
   id?: string;

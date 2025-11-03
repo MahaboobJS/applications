@@ -1,6 +1,7 @@
+import { Home } from './Home';
+
 import type { StoryObj, Meta } from '@storybook/react';
 
-import { Home } from './Home';
 
 const meta: Meta<typeof Home> = {
   component: Home,

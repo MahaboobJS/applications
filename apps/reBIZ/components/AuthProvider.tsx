@@ -1,6 +1,8 @@
 import * as React from 'react';
-import { usePathname, useRouter } from 'next/navigation';
+
 import { useSession } from 'next-auth/react';
+
+import { usePathname, useRouter } from 'next/navigation';
 
 // Simple loading component to replace the barrel import
 const Loading = ({ fullScreen }: { fullScreen?: boolean }) => (

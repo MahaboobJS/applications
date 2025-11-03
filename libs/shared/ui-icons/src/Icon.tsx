@@ -5,6 +5,8 @@ import type { SxProps } from '@mui/material';
 
 import { IconsList, iconComponents } from './icons.list';
 
+
+
 type Props = { iconName: IconsList; sx?: SxProps };
 
 export const Icon = ({ iconName, sx }: Props) => {

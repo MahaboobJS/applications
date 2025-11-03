@@ -1,10 +1,11 @@
-import type { SxProps } from '@mui/material';
 import { Button } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import type { SxProps } from '@mui/material';
 
 import { Layout, Styles } from '@ruyyaan/shared/ui';
 
 import { TextRegular } from '../Typography';
+
 
 type Props = {
   text: string;

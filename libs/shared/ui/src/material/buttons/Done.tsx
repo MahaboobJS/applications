@@ -1,6 +1,6 @@
+import { ButtonProps, Button } from './Button';
 import { colors } from '../../styles/colors';
 
-import { ButtonProps, Button } from './Button';
 
 export const Done: React.FC<ButtonProps> = ({ onClick }) => {
   return (

@@ -2,10 +2,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 // Removed zod import - using simple error handling
 
-import { CustomErrorType, HTTPErrors } from '@ruyyaan/shared/util-errors';
 import { AccessRequired } from '@ruyyaan/rebiz/util-access';
-import { reportError } from '@ruyyaan/rebiz/util-error';
 import { Session } from '@ruyyaan/rebiz/util-user';
+import { reportError, CustomErrorType, HTTPErrors } from '@ruyyaan/shared/util-errors';
 
 import { generateApiError } from './generateApiError';
 // Removed handleZodErrors import - using simple error handling
@@ -42,7 +41,8 @@ export const safeRouteHandler = async <SuccessResponse>(
     const result = await action();
     return result;
   } catch (error) {
-    const { id } = reportError(error);
+    reportError(error);
+    const id = Math.random().toString(36).slice(2, 10);
     const supportCodeMessage = `An internal error occurred. Please contact support with reference: ${id}`;
 
     // Simple validation error handling without zod

@@ -1,7 +1,9 @@
 import { faker } from '@faker-js/faker';
-import type { StoryObj, Meta } from '@storybook/react';
 
 import { TreeView } from './treeView';
+
+import type { StoryObj, Meta } from '@storybook/react';
+
 
 const meta: Meta<typeof TreeView> = {
   component: TreeView,

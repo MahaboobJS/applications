@@ -1,6 +1,7 @@
+import { CheckBox } from './CheckBox';
+
 import type { StoryObj, Meta } from '@storybook/react';
 
-import { CheckBox } from './CheckBox';
 
 const meta: Meta<typeof CheckBox> = {
   component: CheckBox,

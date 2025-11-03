@@ -2,15 +2,21 @@
 
 import * as React from 'react';
 
-import { LocalizationProvider } from '@mui/x-date-pickers';
-import { AdapterLuxon } from '@mui/x-date-pickers/AdapterLuxon';
 import { SessionProvider } from 'next-auth/react';
 import { SnackbarProvider } from 'notistack';
+
 import {
   QueryClient,
   QueryClientProvider as TanStackQueryClientProvider,
 } from '@tanstack/react-query';
+
 import { ThemeProvider as MuiThemeProvider, createTheme } from '@mui/material/styles';
+import { LocalizationProvider } from '@mui/x-date-pickers';
+import { AdapterLuxon } from '@mui/x-date-pickers/AdapterLuxon';
+
+
+import { env } from '@ruyyaan/rebiz/util-env';
+
 import { AuthProvider } from './AuthProvider';
 
 const queryClient = new QueryClient();
@@ -28,7 +34,7 @@ const simpleTheme = createTheme({
 
 function Providers({ children }: React.PropsWithChildren) {
   return (
-    <SessionProvider basePath={'/api/v1/auth'}>
+    <SessionProvider basePath={env.NEXT_PUBLIC_NEXTAUTH_BASEPATH}>
       <MuiThemeProvider theme={simpleTheme}>
         <SnackbarProvider maxSnack={3} anchorOrigin={{ horizontal: 'right', vertical: 'top' }}>
           <LocalizationProvider dateAdapter={AdapterLuxon}>

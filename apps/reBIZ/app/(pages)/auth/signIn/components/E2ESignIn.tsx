@@ -1,11 +1,12 @@
 import React from 'react';
+
+import { signIn } from 'next-auth/react';
+
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
 
 import { TextField } from '@mui/material';
-import { signIn } from 'next-auth/react';
 
 import { Buttons, Layout } from '@ruyyaan/shared/ui';
-import { isE2EEnabled } from '@ruyyaan/rebiz/util-access';
 
 export const E2ESignIn = () => {
   const { register, handleSubmit } = useForm<{

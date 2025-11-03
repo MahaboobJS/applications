@@ -1,9 +1,11 @@
 import * as React from 'react';
 
-import type { SxProps } from '@mui/material';
 import Box from '@mui/material/Box';
+import type { SxProps } from '@mui/material';
 
 import { sizes } from '../../styles/sizes';
+
+
 
 type Variant = 'long' | 'normal';
 type Spacing = 'some' | 'none';

@@ -1,4 +1,4 @@
-/* eslint-disable */
+ 
 export default {
   displayName: 'shared-feature-web-vitals',
   preset: '../../../jest.preset.js',

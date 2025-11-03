@@ -1,9 +1,10 @@
 import { faker } from '@faker-js/faker';
-import type { Meta, StoryFn } from '@storybook/react';
+
 
 import { Layout } from '../layout';
-
 import { Title } from './Title';
+
+import type { Meta, StoryFn } from '@storybook/react';
 
 const meta: Meta<typeof Title.ExtraLarge> = {
   component: Title.ExtraLarge,

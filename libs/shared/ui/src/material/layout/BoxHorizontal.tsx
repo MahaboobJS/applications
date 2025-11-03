@@ -1,5 +1,5 @@
-import type { SxProps } from '@mui/material';
 import Box from '@mui/material/Box';
+import type { SxProps } from '@mui/material';
 
 // this is for a future refactor
 // it is a much nicer way to handle this

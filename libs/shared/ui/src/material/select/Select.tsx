@@ -1,8 +1,8 @@
-import type { SxProps } from '@mui/material';
 import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import BaseSelect from '@mui/material/Select';
+import type { SxProps } from '@mui/material';
 import type { SelectChangeEvent } from '@mui/material/Select';
 
 export type SelectOption<OptionValue> = {

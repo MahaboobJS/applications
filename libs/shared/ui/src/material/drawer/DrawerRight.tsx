@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import Drawer from '@mui/material/Drawer';
 
+
 const DEFAULT_WIDTH = 345;
 
 type Props = React.PropsWithChildren<{ width?: number }>;

@@ -1,9 +1,9 @@
-import type { StoryObj, Meta } from '@storybook/react';
 
 import { Layout } from '../layout';
 import { Typography } from '../typography';
-
 import { Popover } from './Popover';
+
+import type { StoryObj, Meta } from '@storybook/react';
 
 const title = 'Popover Title';
 const open = true;

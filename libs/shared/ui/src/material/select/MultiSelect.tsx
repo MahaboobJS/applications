@@ -1,3 +1,4 @@
+
 import * as React from 'react';
 
 import CloseIcon from '@mui/icons-material/Close';
@@ -139,7 +140,7 @@ function MultiSelect<OptionValue extends string | number>({
     <>
       <InputWrapper onClick={handleListClick}>
         {optionGroups.selected.map((option) => (
-          <MultiselectBox key={'list-' + option.id}>
+          <MultiselectBox key={`list-${  option.id}`}>
             {renderSelectedElement ? (
               renderSelectedElement(option)
             ) : (

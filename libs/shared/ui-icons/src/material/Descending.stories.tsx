@@ -1,6 +1,7 @@
+import { Descending } from './Descending';
+
 import type { StoryObj, Meta } from '@storybook/react';
 
-import { Descending } from './Descending';
 
 const meta: Meta<typeof Descending> = {
   component: Descending,

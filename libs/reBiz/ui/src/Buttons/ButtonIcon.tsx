@@ -1,5 +1,6 @@
-import { useTheme } from '@mui/material';
 import Link from 'next/link';
+
+import { useTheme } from '@mui/material';
 
 import { Icon, IconsList } from '@ruyyaan/shared/ui-icons';
 

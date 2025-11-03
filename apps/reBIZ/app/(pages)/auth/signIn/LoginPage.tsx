@@ -1,15 +1,19 @@
 'use client';
+
 import * as React from 'react';
 
-import Grid from '@mui/material/Grid';
-import Image from 'next/image';
-import { ReadonlyURLSearchParams, useSearchParams } from 'next/navigation';
 import { useSession } from 'next-auth/react';
 import styled from 'styled-components';
 
+import Image from 'next/image';
+import { ReadonlyURLSearchParams, useSearchParams } from 'next/navigation';
+
+
+import Grid from '@mui/material/Grid';
+
+import { TextLarge, Loading } from '@ruyyaan/rebiz/ui';
 import { Layout, BorderLinearProgress } from '@ruyyaan/shared/ui';
 import { backgrounds, logos } from '@ruyyaan/shared/ui-assets/images';
-import { TextLarge, Loading } from '@ruyyaan/rebiz/ui';
 
 import { ErrorBox } from './components/ErrorBox';
 import { SignInOptions } from './components/SignInOptions';

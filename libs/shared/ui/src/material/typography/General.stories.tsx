@@ -1,11 +1,12 @@
-/* eslint-disable react/jsx-pascal-case */
+ 
 import { faker } from '@faker-js/faker';
-import type { StoryFn, Meta } from '@storybook/react';
+
 
 import { Layout } from '../layout';
-
 import { Bold1 } from './Bolden';
 import { General } from './General';
+
+import type { StoryFn, Meta } from '@storybook/react';
 
 const meta: Meta<typeof General.Subtitle> = {
   component: General.Subtitle,

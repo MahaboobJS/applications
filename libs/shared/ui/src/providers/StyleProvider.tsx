@@ -1,7 +1,9 @@
+
 import * as React from 'react';
 
-import CssBaseline from '@mui/material/CssBaseline';
 import { merge } from 'lodash';
+
+import CssBaseline from '@mui/material/CssBaseline';
 
 import { Material } from '../material/styles/Material';
 import { colors } from '../styles/colors';

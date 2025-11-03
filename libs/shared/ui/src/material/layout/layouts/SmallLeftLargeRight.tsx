@@ -1,8 +1,9 @@
 import * as React from 'react';
+
 import { Outlet } from 'react-router-dom';
 
-import type { SxProps } from '@mui/material';
 import Grid from '@mui/material/Grid';
+import type { SxProps } from '@mui/material';
 
 /*
  * This layout is for pages that:

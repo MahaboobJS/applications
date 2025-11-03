@@ -1,7 +1,9 @@
 import { faker } from '@faker-js/faker';
-import type { StoryObj, Meta } from '@storybook/react';
 
 import { DetailsCard } from './DetailsCard';
+
+import type { StoryObj, Meta } from '@storybook/react';
+
 
 const meta: Meta<typeof DetailsCard> = {
   component: DetailsCard,

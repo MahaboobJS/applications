@@ -1,9 +1,11 @@
 'use client';
 
 import React from 'react';
+
 import { RotateLoader } from 'react-spinners';
 
 import { useTheme } from '@mui/material/styles';
+
 
 export type LoadingProps = {
   fullScreen?: boolean;

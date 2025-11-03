@@ -1,6 +1,7 @@
+import { Done } from './Done';
+
 import type { StoryObj, Meta } from '@storybook/react';
 
-import { Done } from './Done';
 
 const meta: Meta<typeof Done> = {
   component: Done,

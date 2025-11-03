@@ -1,8 +1,9 @@
 import axios from 'axios';
+
+import { reportError, CustomErrorType } from '@ruyyaan/shared/util-errors';
+
 import type { AxiosRequestConfig } from 'axios';
 
-import { CustomErrorType } from '@ruyyaan/shared/util-errors';
-import { reportError } from '@ruyyaan/rebiz/util-error';
 
 export type FetchDataOptions = {
   apiUrl: string;
@@ -42,7 +43,7 @@ export const axiosFetch = async ({
       throw error.response.data.error;
     } else {
       const customError: CustomErrorType = {
-        message: 'Failed to fetch data for: ' + apiUrl,
+        message: `Failed to fetch data for: ${  apiUrl}`,
         name: 'unhandledError',
         code: 500,
       };

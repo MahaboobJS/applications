@@ -3,28 +3,19 @@ import type { Session } from 'next-auth';
 
 // Simple mock implementation for useGetAccessQuery
 export function useGetAccessQuery(session?: Session | null): {
-  data?: {
-    homepage: string;
-    permit: {
-      read: boolean;
-      create: boolean;
-      issuer: boolean;
-      receiver: boolean;
-      gasTester: boolean;
-      preWorkGasTester: boolean;
-      interimWorkGasTester: boolean;
-      postWorkGasTester: boolean;
-    };
-    mainMenu: {
-      permit: boolean;
-      gastester: boolean;
-      notifications: boolean;
-      admin: boolean;
-      profile: boolean;
-      myPermits: boolean;
-      monitoring: boolean;
-    };
-  } | { error: string };
+  data?:
+    | {
+        homepage: string;
+        connections: {
+          read: boolean;
+          create: boolean;
+        };
+        pipeline: {
+          read: boolean;
+          create: boolean;
+        };
+      }
+    | { error: string };
   isLoading?: boolean;
 } {
   // If no session, return error
@@ -39,24 +30,13 @@ export function useGetAccessQuery(session?: Session | null): {
   return {
     data: {
       homepage: '/dashboard',
-      permit: {
+      connections: {
         read: true,
         create: true,
-        issuer: true,
-        receiver: true,
-        gasTester: true,
-        preWorkGasTester: true,
-        interimWorkGasTester: true,
-        postWorkGasTester: true,
       },
-      mainMenu: {
-        permit: true,
-        gastester: true,
-        notifications: true,
-        admin: true,
-        profile: true,
-        myPermits: true,
-        monitoring: true,
+      pipeline: {
+        read: true,
+        create: true,
       },
     },
     isLoading: false,

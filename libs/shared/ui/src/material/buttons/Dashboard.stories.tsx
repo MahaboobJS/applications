@@ -1,6 +1,7 @@
+import { Dashboard } from './Dashboard';
+
 import type { StoryObj, Meta } from '@storybook/react';
 
-import { Dashboard } from './Dashboard';
 
 const meta: Meta<typeof Dashboard> = {
   component: Dashboard,

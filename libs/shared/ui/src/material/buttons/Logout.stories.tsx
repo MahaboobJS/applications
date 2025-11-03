@@ -1,6 +1,7 @@
+import { Logout } from './Logout';
+
 import type { StoryObj, Meta } from '@storybook/react';
 
-import { Logout } from './Logout';
 
 const meta: Meta<typeof Logout> = {
   component: Logout,

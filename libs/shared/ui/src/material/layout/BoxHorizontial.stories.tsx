@@ -1,8 +1,10 @@
 import { faker } from '@faker-js/faker';
-import type { StoryObj, Meta, StoryFn } from '@storybook/react';
+
 
 import { BoxHorizontal } from './BoxHorizontal';
 import { FlexBox } from './FlexBox';
+
+import type { StoryObj, Meta, StoryFn } from '@storybook/react';
 
 const meta: Meta<typeof BoxHorizontal> = {
   component: BoxHorizontal,

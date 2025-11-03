@@ -1,7 +1,9 @@
 import { faker } from '@faker-js/faker';
-import type { StoryObj, Meta } from '@storybook/react';
 
 import { PageContentBox } from './PageContentBox';
+
+import type { StoryObj, Meta } from '@storybook/react';
+
 
 const meta: Meta<typeof PageContentBox> = {
   component: PageContentBox,

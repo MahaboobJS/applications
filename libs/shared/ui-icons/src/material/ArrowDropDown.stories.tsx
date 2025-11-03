@@ -1,6 +1,7 @@
+import { DropDownArrow } from './ArrowDropDown';
+
 import type { StoryObj, Meta } from '@storybook/react';
 
-import { DropDownArrow } from './ArrowDropDown';
 
 const meta: Meta<typeof DropDownArrow> = {
   component: DropDownArrow,

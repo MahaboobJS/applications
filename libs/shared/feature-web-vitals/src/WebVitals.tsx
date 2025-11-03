@@ -1,6 +1,6 @@
+import { useReportWebVitals } from 'next/web-vitals';
 import * as React from 'react';
 
-import { useReportWebVitals } from 'next/web-vitals';
 
 const reportMetrics = ({
   url,

@@ -1,6 +1,7 @@
+import { Ascending } from './Ascending';
+
 import type { StoryObj, Meta } from '@storybook/react';
 
-import { Ascending } from './Ascending';
 
 const meta: Meta<typeof Ascending> = {
   component: Ascending,

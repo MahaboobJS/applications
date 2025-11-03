@@ -1,5 +1,5 @@
-import { IconsList } from '@ruyyaan/shared/ui-icons';
 import { Access } from '@ruyyaan/rebiz/util-access';
+import { IconsList } from '@ruyyaan/shared/ui-icons';
 
 export type NavigationRoute = {
   text: string;

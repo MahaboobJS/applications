@@ -1,6 +1,6 @@
-import type { SxProps } from '@mui/material';
 import CardContent from '@mui/material/CardContent';
 import Paper from '@mui/material/Paper';
+import type { SxProps } from '@mui/material';
 
 type Props = {
   sx: SxProps;

@@ -1,12 +1,14 @@
 import { faker } from '@faker-js/faker';
-import { ThemeProvider } from '@mui/material/styles';
-import type { StoryObj, Meta } from '@storybook/react';
 import { fn } from '@storybook/test';
 
-import { Buttons } from '@ruyyaan/shared/ui';
-import { themes } from '@ruyyaan/rebiz/ui-theme';
+import { ThemeProvider } from '@mui/material/styles';
 
-const SecondaryButton = Buttons.SecondaryButton;
+import { themes } from '@ruyyaan/rebiz/ui-theme';
+import { Buttons } from '@ruyyaan/shared/ui';
+
+import type { StoryObj, Meta } from '@storybook/react';
+
+const {SecondaryButton} = Buttons;
 
 const meta: Meta<typeof SecondaryButton> = {
   component: SecondaryButton,

@@ -1,9 +1,11 @@
 'use client';
+
 import React, { useState } from 'react';
+
+import { startHolyLoader, stopHolyLoader } from 'holy-loader';
 
 import { type SxProps } from '@mui/material';
 import Skeleton from '@mui/material/Skeleton';
-import { startHolyLoader, stopHolyLoader } from 'holy-loader';
 
 import { Loading } from '@ruyyaan/shared/ui';
 

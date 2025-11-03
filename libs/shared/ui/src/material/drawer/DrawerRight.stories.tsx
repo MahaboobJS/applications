@@ -1,6 +1,7 @@
+import { DrawerRight } from './DrawerRight';
+
 import type { StoryObj, Meta } from '@storybook/react';
 
-import { DrawerRight } from './DrawerRight';
 
 const meta: Meta<typeof DrawerRight> = {
   component: DrawerRight,

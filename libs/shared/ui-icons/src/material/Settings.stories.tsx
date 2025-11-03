@@ -1,6 +1,7 @@
+import { Settings } from './Settings';
+
 import type { StoryObj, Meta } from '@storybook/react';
 
-import { Settings } from './Settings';
 
 const meta: Meta<typeof Settings> = {
   component: Settings,

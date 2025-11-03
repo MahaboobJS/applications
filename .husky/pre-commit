@@ -1,6 +1,15 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
+# #!/usr/bin/env sh
+# . "$(dirname -- "$0")/_/husky.sh"
 
-# Pre-commit checks disabled
-echo "Pre-commit hooks disabled"
-exit 0
+# echo "🔍 Running pre-commit checks (lint & format)..."
+
+# # Run lint-staged to check and fix staged files
+# npx lint-staged
+
+# # Check if lint-staged passed
+# if [ $? -ne 0 ]; then
+#   echo "❌ Pre-commit checks failed. Please fix the issues and try again."
+#   exit 1
+# fi
+
+# echo "✅ Pre-commit checks passed!"

@@ -1,6 +1,7 @@
+import { Add } from './Add';
+
 import type { StoryObj, Meta } from '@storybook/react';
 
-import { Add } from './Add';
 
 const meta: Meta<typeof Add> = {
   component: Add,

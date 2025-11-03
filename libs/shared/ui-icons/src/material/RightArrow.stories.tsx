@@ -1,6 +1,7 @@
+import { RightArrow } from './RightArrow';
+
 import type { StoryObj, Meta } from '@storybook/react';
 
-import { RightArrow } from './RightArrow';
 
 const meta: Meta<typeof RightArrow> = {
   component: RightArrow,

@@ -35,17 +35,17 @@ const selectedValuesWithoutValue: MultiSelectOption<string>[] = [];
 export const Primary: Story = {
   render: Template,
   args: {
-    options: options,
+    options,
     selectedValues: selectedValuesWithValue,
-    onChange: onChange,
+    onChange,
   },
 };
 
 export const WithoutValue: Story = {
   render: Template,
   args: {
-    options: options,
+    options,
     selectedValues: selectedValuesWithoutValue,
-    onChange: onChange,
+    onChange,
   },
 };

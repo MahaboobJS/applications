@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import type { SxProps } from '@mui/material';
 import { SimpleTreeView as MaterialTreeView } from '@mui/x-tree-view';
+import type { SxProps } from '@mui/material';
 
 // Custom TreeItem component for SimpleTreeView
 const TreeItem = ({ children, itemId, label, onClick, className, sx, ...props }: any) => {

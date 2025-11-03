@@ -1,6 +1,7 @@
+import { NoMatch } from './NoMatch';
+
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { NoMatch } from './NoMatch';
 
 const meta: Meta<typeof NoMatch> = {
   component: NoMatch,

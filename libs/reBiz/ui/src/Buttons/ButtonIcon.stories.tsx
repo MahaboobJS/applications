@@ -1,8 +1,9 @@
-import type { StoryObj, Meta } from '@storybook/react';
 
 import { IconsList } from '@ruyyaan/shared/ui-icons';
 
 import { ButtonIcon } from './ButtonIcon';
+
+import type { StoryObj, Meta } from '@storybook/react';
 
 const meta: Meta<typeof ButtonIcon> = {
   component: ButtonIcon,

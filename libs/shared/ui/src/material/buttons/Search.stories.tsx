@@ -1,6 +1,7 @@
+import { Search } from './Search';
+
 import type { StoryObj, Meta } from '@storybook/react';
 
-import { Search } from './Search';
 
 const meta: Meta<typeof Search> = {
   component: Search,

@@ -1,6 +1,7 @@
+import { Clear } from './Clear';
+
 import type { StoryObj, Meta } from '@storybook/react';
 
-import { Clear } from './Clear';
 
 const meta: Meta<typeof Clear> = {
   component: Clear,

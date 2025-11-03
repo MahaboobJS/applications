@@ -1,6 +1,7 @@
+import { Date } from './Date';
+
 import type { StoryObj, Meta } from '@storybook/react';
 
-import { Date } from './Date';
 
 const meta: Meta<typeof Date> = {
   component: Date,

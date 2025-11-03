@@ -1,5 +1,6 @@
-import darkScrollbar from '@mui/material/darkScrollbar';
 import { createGlobalStyle } from 'styled-components';
+
+import darkScrollbar from '@mui/material/darkScrollbar';
 
 import { Theme } from './theme';
 

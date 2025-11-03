@@ -1,8 +1,9 @@
-import type { StoryObj, Meta } from '@storybook/react';
-
+import { Select } from './Select';
 import { Styles } from '../../styles';
 
-import { Select } from './Select';
+import type { StoryObj, Meta } from '@storybook/react';
+
+
 
 const meta: Meta<typeof Select> = {
   component: Select,

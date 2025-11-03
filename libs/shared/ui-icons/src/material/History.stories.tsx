@@ -1,6 +1,7 @@
+import { History } from './History';
+
 import type { StoryObj, Meta } from '@storybook/react';
 
-import { History } from './History';
 
 const meta: Meta<typeof History> = {
   component: History,

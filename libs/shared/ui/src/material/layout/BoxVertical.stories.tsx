@@ -1,7 +1,9 @@
 import { faker } from '@faker-js/faker';
-import type { StoryObj, Meta, StoryFn } from '@storybook/react';
 
 import { BoxVertical } from './BoxVertical';
+
+import type { StoryObj, Meta, StoryFn } from '@storybook/react';
+
 
 const meta: Meta<typeof BoxVertical> = {
   component: BoxVertical,

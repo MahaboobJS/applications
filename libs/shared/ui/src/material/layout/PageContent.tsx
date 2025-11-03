@@ -1,7 +1,8 @@
-import type { SxProps } from '@mui/material';
 import Grid from '@mui/material/Grid';
+import type { SxProps } from '@mui/material';
 
 import { PageContentBox } from './PageContentBox';
+
 
 export const PageContent = ({ children, sx }: React.PropsWithChildren<{ sx?: SxProps }>) => {
   return (

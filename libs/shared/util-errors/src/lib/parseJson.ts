@@ -1,6 +1,6 @@
+import { reportError } from './reportError';
 import { castUnknownVariable } from '../lib/utils/castUnknown';
 
-import { reportError } from './reportError';
 
 export const parseJson = <Data>(data: string, throwError = true): Data => {
   try {

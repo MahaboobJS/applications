@@ -1,8 +1,8 @@
 import { Icons } from '@ruyyaan/shared/ui-icons';
 
+import { ButtonProps, Button } from './Button';
 import { colors } from '../../styles/colors';
 
-import { ButtonProps, Button } from './Button';
 
 export const Cancel: React.FC<ButtonProps> = ({ text }) => {
   return (

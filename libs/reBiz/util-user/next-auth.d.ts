@@ -1,4 +1,5 @@
 import { DefaultSession } from 'next-auth';
+
 import { AccessRole } from './types';
 
 declare module 'next-auth' {

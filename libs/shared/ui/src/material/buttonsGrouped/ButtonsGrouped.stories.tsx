@@ -1,8 +1,9 @@
-import type { StoryObj, Meta } from '@storybook/react';
-
+import { ButtonsGrouped } from './ButtonsGrouped';
 import { Styles } from '../../styles';
 
-import { ButtonsGrouped } from './ButtonsGrouped';
+import type { StoryObj, Meta } from '@storybook/react';
+
+
 
 const meta: Meta<typeof ButtonsGrouped> = {
   component: ButtonsGrouped,

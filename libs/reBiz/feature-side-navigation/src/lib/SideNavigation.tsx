@@ -1,15 +1,16 @@
 'use client';
+
 import * as React from 'react';
+
+import { usePathname } from 'next/navigation';
 
 import List from '@mui/material/List';
 import Skeleton from '@mui/material/Skeleton';
-import { usePathname } from 'next/navigation';
 
-import { Layout } from '@ruyyaan/shared/ui';
 import { useGetAccessQuery } from '@ruyyaan/rebiz/data-access-api';
+import { Layout } from '@ruyyaan/shared/ui';
 
 import { sideNavigationRoutes, userInfoRoutes } from '../tabs';
-
 import { SideNavigationDrawer } from './elements';
 import Header from './Header';
 import { ListItem } from './ListItem';

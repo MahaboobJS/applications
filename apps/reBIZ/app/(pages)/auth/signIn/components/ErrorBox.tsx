@@ -1,8 +1,8 @@
 'use client';
 import * as React from 'react';
 
-import { Layout } from '@ruyyaan/shared/ui';
 import { TextRegular } from '@ruyyaan/rebiz/ui';
+import { Layout } from '@ruyyaan/shared/ui';
 
 export function ErrorBox({ errors }: Readonly<{ errors: string[] }>) {
   const errorCodes: Record<string, string> = {

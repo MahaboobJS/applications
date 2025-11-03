@@ -1,4 +1,4 @@
-/* eslint-disable */
+ 
 export default {
   displayName: 'shared-ui-icons',
   preset: '../../../jest.preset.js',

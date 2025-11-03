@@ -1,10 +1,10 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 
-import Providers from '../components/Providers';
 
 import Loading from './loading';
 import { MainAppWrapper } from './MainAppWrapper';
+import Providers from '../components/Providers';
 
 export function MainApp({ children }: React.PropsWithChildren) {
   const [isLoading, setIsLoading] = useState(true);

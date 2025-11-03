@@ -1,8 +1,9 @@
 import { faker } from '@faker-js/faker';
-import type { StoryObj, Meta } from '@storybook/react';
 import { withRouter } from 'storybook-addon-react-router-v6';
 
 import { ErrorFallback } from './ErrorFallback';
+
+import type { StoryObj, Meta } from '@storybook/react';
 
 const meta: Meta<typeof ErrorFallback> = {
   component: ErrorFallback,

@@ -1,7 +1,8 @@
-import type { StoryObj, Meta } from '@storybook/react';
 
 import { Icon } from './Icon';
 import { IconsList } from './icons.list';
+
+import type { StoryObj, Meta } from '@storybook/react';
 
 function Icons() {
   return (

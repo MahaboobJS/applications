@@ -1,4 +1,4 @@
-/* eslint-disable */
+ 
 export default {
   displayName: 'rebiz-util-api',
   preset: '../../../jest.preset.js',

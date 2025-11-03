@@ -19,8 +19,8 @@ export function SignInOptions({
   };
 
   // const showE2eSigning = isE2EEnabled();
-  const showE2eSigning = true;
-  const showDefaultLogin = false;
+  const showE2eSigning = false;
+  const showDefaultLogin = true;
 
   return (
     <Layout.BoxVertical sx={{ width: '100%', gap: 2 }}>

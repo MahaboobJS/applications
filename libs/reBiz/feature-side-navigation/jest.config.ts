@@ -1,4 +1,4 @@
-/* eslint-disable */
+ 
 export default {
   displayName: 'rebiz-feature-side-navigation',
   preset: '../../../jest.preset.js',

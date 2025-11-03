@@ -1,8 +1,9 @@
 import { faker } from '@faker-js/faker';
-import type { StoryObj, Meta } from '@storybook/react';
 import { fn } from '@storybook/test';
 
 import { PrimaryButton } from './PrimaryButton';
+
+import type { StoryObj, Meta } from '@storybook/react';
 
 const meta: Meta<typeof PrimaryButton> = {
   component: PrimaryButton,

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { Icon, IconsList } from '@ruyyaan/shared/ui-icons';
 import {
   Autocomplete,
   Avatar,
@@ -17,9 +16,10 @@ import {
 } from '@mui/material';
 
 import { Buttons, Layout, Loading } from '@ruyyaan/shared/ui';
+import { Icon, IconsList } from '@ruyyaan/shared/ui-icons';
+
 
 import { TextLarge, TextMedium, TextRegular, TextSmall } from '../Typography';
-
 import { Item, ListProps } from './types';
 
 const LoadingIndicator: React.FC = () => (

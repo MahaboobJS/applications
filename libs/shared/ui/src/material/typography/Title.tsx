@@ -1,5 +1,5 @@
-import type { TypographyProps } from '@mui/material';
 import Typography from '@mui/material/Typography';
+import type { TypographyProps } from '@mui/material';
 
 const colors = {
   full: '#333',

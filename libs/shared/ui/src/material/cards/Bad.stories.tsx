@@ -1,6 +1,7 @@
+import { Bad } from './Bad';
+
 import type { StoryObj, Meta } from '@storybook/react';
 
-import { Bad } from './Bad';
 
 const meta: Meta<typeof Bad> = {
   component: Bad,
